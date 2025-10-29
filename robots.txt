@@ -1,0 +1,6 @@
+# AJ Long Electric - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://ajlongelectric.com/sitemap.xml

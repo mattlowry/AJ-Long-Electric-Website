@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Preconnect to external domains for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta charset="UTF-8">
+    <!-- CRITICAL CSS START -->
+    <style>
+    /* Prevent FOUC - Critical styles that load immediately */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f7fafc; }
+    .hidden { display: none !important; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+    header { background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
+    main { min-height: 50vh; }
+    footer { background: #222; color: #999; padding: 2rem 0; }
+    /* Brand colors to prevent flash */
+    .bg-aj-orange { background-color: #FF7200 !important; }
+    .bg-aj-dark { background-color: #222222 !important; }
+    .text-white { color: white !important; }
+    .text-gray-800 { color: #2d3748 !important; }
+    .bg-gray-100 { background-color: #f7fafc !important; }
+    /* Prevent layout shift */
+    .sticky-nav { position: sticky; top: 0; z-index: 100; }
+    .mobile-menu { position: fixed; right: -100%; }
+    @media (max-width: 768px) {
+      .md\:hidden { display: none !important; }
+    }
+    </style>
+    <!-- CRITICAL CSS END -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: Enhanced Title Tag -->
+    <title>Electrician Langston VA | Historic Community Electrical Specialists | AJ Long Electric</title>
+    <!-- SEO: Compelling Meta Description -->
+    <meta name="description" content="AJ Long Electric provides specialized electrical services for Langston's historic homes and community buildings. Expert electrical solutions with over 1,200 5-star reviews serving this distinctive Arlington neighborhood.">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Electrician Langston VA | Historic Community Electrical Specialists | AJ Long Electric">
+    <meta property="og:description" content="AJ Long Electric provides specialized electrical services for Langston's historic homes and community buildings. Expert electrical solutions with over 1,200 5-star reviews serving this distinctive Arlington neighborhood.">
+    <meta property="og:image" content="https://ajlongelectric.com/assets/images/aj-long-electric-og.jpg">
+    <meta property="og:url" content="https://ajlongelectric.com/virginia-electrical-services/langston.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Electrician Langston VA | Historic Community Electrical Specialists | AJ Long Electric">
+    <meta name="twitter:description" content="AJ Long Electric provides specialized electrical services for Langston's historic homes and community buildings. Expert electrical solutions with over 1,200 5-star reviews serving this distinctive Arlington neighborhood.">
+    <meta name="twitter:image" content="https://ajlongelectric.com/assets/images/aj-long-electric-twitter.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/favicon/favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ElectricalContractor",
+      "name": "AJ Long Electric - Langston",
+      "image": "https://ajlongelectric.com/assets/logos/AJLongElectric-Logo.png",
+      "@id": "https://ajlongelectric.com/virginia-electrical-services/langston.html",
+      "url": "https://ajlongelectric.com/virginia-electrical-services/langston.html",
+      "telephone": "+1-703-997-0026",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7138 Little River Turnpike #305",
+        "addressLocality": "Annandale",
+        "addressRegion": "VA",
+        "postalCode": "22003",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.8930,
+        "longitude": -77.0722
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "07:00",
+        "closes": "19:00"
+      },{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "15:00"
+      }],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Arlington",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Virginia"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Langston",
+          "containedInPlace": {
+            "@type": "City",
+            "name": "Arlington"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/AJLongElectric",
+        "https://g.co/kgs/smNu5bB",
+        "https://www.yelp.com/biz/aj-long-electric-fairfax"
+      ],
+      "description": "Professional electrical services in Langston, Arlington VA. Specializing in historic home electrical upgrades, community building electrical, and residential rewiring. Licensed and insured electricians with over 1,200 5-star reviews.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Electrical Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Historic Home Electrical",
+              "description": "Specialized electrical solutions for Langston's historic homes, including rewiring, panel upgrades, and system modernization with respect for architectural integrity"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Community Building Electrical",
+              "description": "Complete electrical services for Langston's community buildings including power systems, lighting solutions, and energy-efficient upgrades"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Residential Electrical Upgrades",
+              "description": "Full electrical system upgrades for Langston homes including panel replacements, circuit installations, and modern electrical features"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Energy-Efficient Lighting",
+              "description": "Modern, energy-efficient lighting solutions for Langston residences and community spaces that preserve character while reducing energy costs"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "EV Charging Installation",
+              "description": "Expert installation of electric vehicle charging stations for Langston residential properties adapting to modern needs"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Electrical Troubleshooting & Repairs",
+              "description": "Professional diagnosis and repair of electrical issues in Langston properties with special attention to historic electrical systems"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1200"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "James W."
+        },
+        "datePublished": "2023-11-05",
+        "reviewBody": "AJ Long Electric showed incredible respect for the historical significance of our Langston community building during our electrical upgrade. Their team preserved architectural details while bringing our power systems into the modern age. Couldn't be happier with their service!"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ajlongelectric.com/virginia-electrical-services/langston.html"
+      }
+    }
+    </script>
+  <script src="/js/header-loader.js?v=1746953030"></script>
+  <script src="/js/housecall-pro-integration.js?v=1746955357" defer></script>
+
+<!-- Breadcrumb Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ajlongelectric.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Public",
+      "item": "https://ajlongelectric.com/public.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Virginia"
+    }
+  ]
+}
+</script>
+
+    <!-- ========================================
+         CONSOLIDATED CSS STRUCTURE v3.0
+         Load in this specific order for proper cascade
+         ======================================== -->
+
+    <!-- 1. CORE: Base styles, typography, header, navigation, buttons -->
+    <link rel="stylesheet" href="/assets/css/core.css">
+
+    <!-- 2. MOBILE: All mobile optimizations consolidated -->
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+
+    <!-- 3. FOOTER: Desktop 4-col & mobile 1-col layout -->
+    <link rel="stylesheet" href="/assets/css/footer.css">
+
+    <!-- 4. ACCESSIBILITY: WCAG 2.1 Level AA compliance -->
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+
+</head>
+<body class="font-sans antialiased text-gray-800">
+<!-- Skip to main content for accessibility -->
+<a href="/#main-content" class="skip-to-main sr-only sr-only-focusable">Skip to main content</a>
+
+    <!-- Header -->
+    <div w3-include-html="/include/standard-header.html"></div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu">
+    <div class="p-4 flex justify-between items-center border-b">
+        <div>
+            <h2 class="text-xl font-bold"><span class="text-aj-orange">AJ LONG</span> ELECTRIC</h2>
+        </div>
+        <button id="close-menu" class="text-gray-500 hover:text-gray-800">
+            <i class="fas fa-times text-2xl"></i>
+        </button>
+    </div>
+    <nav class="p-4">
+        <ul class="space-y-4">
+                <li><a href="/" class="block py-2 px-4 hover:bg-gray-100 rounded">Home</a></li>
+                <li><a href="/pages/about.html" class="block py-2 px-4 hover:bg-gray-100 rounded">About Us</a></li>
+                <li><a href="/process.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Our Process</a></li>
+                <li><a href="/pages/services.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Services</a></li>
+                <li><a href="/pages/testimonials.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Testimonials</a></li>
+                <li><a href="/service-areas.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Service Areas</a></li>
+                <li><a href="/resources.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Resources</a></li>
+                <li><a href="/faq.html" class="block py-2 px-4 hover:bg-gray-100 rounded">FAQs</a></li>
+                <li><a href="/pages/blog.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Blog</a></li>
+                <li><a href="/pages/contact.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="absolute bottom-0 left-0 w-full p-4 bg-gray-100 space-y-3">
+        <div class="text-center mb-1">
+            <a href="tel:7039970026" class="flex items-center justify-center py-3 bg-aj-orange text-white rounded-lg">
+                <i class="fas fa-phone mr-2"></i> Call Us: 703-997-0026
+            </a>
+        </div>
+        <a href="/pages/contact.html" class="w-full flex items-center justify-center py-3 bg-aj-orange text-white rounded-lg hover:bg-orange-700 transition">
+            <i class="fas fa-calculator mr-2"></i> Get an Estimate
+        </a>
+        <button data-token="4bcbc2f7231b4633abc97173fe9db382" data-orgname="AJ-Long-Electric" class="hcp-button w-full bg-gray-800 text-white font-bold py-3 rounded-lg hover:bg-gray-700 transition" onClick="HCPWidget.openModal()">
+            <i class="fas fa-calendar-alt mr-2"></i> Book Online
+        </button>
+    </div>
+</div>
+
+    <!-- Hero Section -->
+    <section class="pattern-bg text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center animate-fadeInUp">
+                <h1 class="text-4xl font-bold mb-4">Electrician in <span class="text-aj-orange">Langston, VA</span></h1>
+                <p class="text-lg max-w-3xl mx-auto">AJ Long Electric provides specialized electrical services for Langston's historic homes and community buildings. Our team respects the unique historical significance of this important Arlington neighborhood.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Langston Service Area -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Specialized Electrical Solutions for <span class="text-aj-orange">Langston</span></h2>
+                    <p class="text-gray-600 mb-4">AJ Long Electric has been providing premium electrical services to Langston and surrounding Arlington areas for over a decade. As a historically significant community with rich heritage, Langston presents unique electrical challenges that require specialized knowledge and sensitivity.</p>
+                    <p class="text-gray-600 mb-4">From the historic homes to community buildings and gathering spaces, our licensed electricians understand the specific requirements of older structures and the importance of preserving architectural integrity while bringing electrical systems up to modern standards. Our expertise in historic home electrical work, careful system modernization, and respectful upgrades makes us the ideal partner for Langston's electrical needs.</p>
+                    <p class="text-gray-600">We serve the entire Langston neighborhood and surrounding areas with pride and respect for its cultural significance. With over 1,200 5-star reviews, our team delivers reliable, professional service for both community and residential electrical projects.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12421.38401145253!2d-77.07219982624253!3d38.893043337533094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b6935d71eb7f%3A0x940d0242981c3a89!2sLangston-Brown%20Community%20Center!5e0!3m2!1sen!2sus!4v1682174328547!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services in Langston -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Specialized Electrical Services for <span class="text-aj-orange">Langston</span></h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Our comprehensive electrical solutions are tailored to the unique needs of Langston's historic homes and community buildings.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-grow">
+                    <div class="w-16 h-16 bg-aj-orange rounded-lg text-white flex items-center justify-center mb-4">
+                        <i class="fas fa-home text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Historic Home Electrical</h3>
+                    <p class="text-gray-600 mb-3">Specialized electrical solutions for Langston's historic homes. Our team carefully updates older electrical systems to modern safety standards while preserving the character and architectural details that make these homes special.</p>
+                    <a href="/services.html#rewiring" class="text-aj-orange hover:underline flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-grow">
+                    <div class="w-16 h-16 bg-aj-orange rounded-lg text-white flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Community Building Electrical</h3>
+                    <p class="text-gray-600 mb-3">Complete electrical services for Langston's community buildings and gathering spaces. Our solutions address the specific needs of these important structures while enhancing safety, efficiency, and functionality.</p>
+                    <a href="/services.html#commercial" class="text-aj-orange hover:underline flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-grow">
+                    <div class="w-16 h-16 bg-aj-orange rounded-lg text-white flex items-center justify-center mb-4">
+                        <i class="fas fa-plug text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Residential Electrical Upgrades</h3>
+                    <p class="text-gray-600 mb-3">Full electrical system upgrades for Langston homes including panel replacements, circuit installations, and modern electrical features that enhance safety and comfort while respecting historical context.</p>
+                    <a href="/services/panel-replacements/index.html" class="text-aj-orange hover:underline flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                    <a href="/resources/signs-panel-upgrade.html" class="text-aj-orange hover:underline flex items-center mt-2">
+                        Signs You Need a Panel Upgrade <i class="fas fa-book ml-1"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mt-8">
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-grow">
+                    <div class="w-16 h-16 bg-aj-orange rounded-lg text-white flex items-center justify-center mb-4">
+                        <i class="fas fa-lightbulb text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Energy-Efficient Lighting</h3>
+                    <p class="text-gray-600 mb-3">Modern, energy-efficient lighting solutions for Langston residences and community spaces. Our lighting designs preserve the character of historic spaces while reducing energy costs and environmental impact.</p>
+                    <a href="/services/recessed-lighting/index.html" class="text-aj-orange hover:underline flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                    <a href="/resources/recessed-lighting-guide.html" class="text-aj-orange hover:underline flex items-center mt-2">
+                        Recessed Lighting Guide <i class="fas fa-book ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-grow">
+                    <div class="w-16 h-16 bg-aj-orange rounded-lg text-white flex items-center justify-center mb-4">
+                        <i class="fas fa-car-battery text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">EV Charging Installation</h3>
+                    <p class="text-gray-600 mb-3">Expert installation of electric vehicle charging stations for Langston residential properties. We carefully adapt modern EV charging technology to existing electrical systems with minimal disruption.</p>
+                    <a href="/services/ev-charger-installation/index.html" class="text-aj-orange hover:underline flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                    <a href="/resources/ev-charger-basics.html" class="text-aj-orange hover:underline flex items-center mt-2">
+                        EV Charger Basics <i class="fas fa-book ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-grow">
+                    <div class="w-16 h-16 bg-aj-orange rounded-lg text-white flex items-center justify-center mb-4">
+                        <i class="fas fa-tools text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Troubleshooting & Repairs</h3>
+                    <p class="text-gray-600 mb-3">Professional diagnosis and repair of electrical issues in Langston properties. Our experienced team has special expertise with older and historic electrical systems, quickly identifying problems and providing reliable solutions.</p>
+                    <a href="/services.html#repairs" class="text-aj-orange hover:underline flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="/pages/services.html" class="inline-block bg-aj-orange hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg shadow-md transition">
+                    View All Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us for Langston -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Why Choose <span class="text-aj-orange">AJ Long Electric</span> in Langston</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Here's why Langston's community leaders, homeowners, and residents trust us with their electrical needs.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover-grow">
+                    <div class="inline-flex items-center justify-center h-16 w-16 rounded-full bg-aj-orange text-white text-2xl mb-4">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Historic Expertise</h3>
+                    <p class="text-gray-600">Specialized knowledge of historic electrical systems with sensitivity to preserving architectural integrity during modernization.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover-grow">
+                    <div class="inline-flex items-center justify-center h-16 w-16 rounded-full bg-aj-orange text-white text-2xl mb-4">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Licensed & Insured</h3>
+                    <p class="text-gray-600">Full residential and commercial licensing with comprehensive insurance coverage for all projects in Arlington County.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover-grow">
+                    <div class="inline-flex items-center justify-center h-16 w-16 rounded-full bg-aj-orange text-white text-2xl mb-4">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">5-Star Service</h3>
+                    <p class="text-gray-600">Over 1,200 5-star reviews from satisfied customers across Northern Virginia, including many in the Arlington area.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover-grow">
+                    <div class="inline-flex items-center justify-center h-16 w-16 rounded-full bg-aj-orange text-white text-2xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Community Respect</h3>
+                    <p class="text-gray-600">Deep appreciation for Langston's historical significance and community heritage, informing how we approach every project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Projects in Langston -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Recent Projects in <span class="text-aj-orange">Langston</span></h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Take a look at some of our recent electrical projects in the Langston area of Arlington.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover-grow">
+                    <div class="h-56 bg-gray-300"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Historic Home Rewiring</h3>
+                        <p class="text-gray-600 mb-4">Complete electrical rewiring for a historic Langston home, bringing the system up to modern safety codes while carefully preserving original architectural features and historical character.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-aj-orange"></i> Langston Boulevard, Arlington
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover-grow">
+                    <div class="h-56 bg-gray-300"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Community Center Lighting</h3>
+                        <p class="text-gray-600 mb-4">Energy-efficient lighting upgrade for a Langston community building, featuring LED fixtures, improved illumination for gathering spaces, and automated controls to reduce energy usage.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-aj-orange"></i> Community Center, Langston
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover-grow">
+                    <div class="h-56 bg-gray-300"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Residential Panel Upgrade</h3>
+                        <p class="text-gray-600 mb-4">200-amp electrical panel upgrade for a Langston family home, providing increased capacity for modern appliances and electronics while improving safety with updated circuit protection.</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-aj-orange"></i> North Culpeper Street, Langston
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-aj-dark text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Need Electrical Services for Your Langston Property?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Contact AJ Long Electric today for a comprehensive estimate on your residential or community electrical needs in Langston, Arlington.</p>
+            <div class="flex justify-center flex-wrap gap-4">
+                <a href="/pages/contact.html" class="bg-aj-orange hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg shadow-md transition inline-flex items-center">
+                    <i class="fas fa-clipboard-list mr-2"></i> Request an Estimate
+                </a>
+                <a href="tel:7039970026" class="bg-transparent border-2 border-white hover:bg-white hover:text-aj-dark text-white font-bold py-3 px-8 rounded-lg transition inline-flex items-center">
+                    <i class="fas fa-phone mr-2"></i> Call Us: 703-997-0026
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- We Also Serve Nearby Areas -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">We Also Serve Nearby Areas</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">AJ Long Electric provides quality electrical services to these communities surrounding Langston:</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <a href="/locations/virginia/cities/arlington.html" class="text-center p-3 bg-gray-100 rounded-lg hover:bg-aj-orange hover:text-white transition">
+                    <span class="font-medium">Arlington</span>
+                </a>
+                <a href="/locations/virginia/cities/ballston.html" class="text-center p-3 bg-gray-100 rounded-lg hover:bg-aj-orange hover:text-white transition">
+                    <span class="font-medium">Ballston</span>
+                </a>
+                <a href="/locations/virginia/cities/arlington-recessed-lighting.html" class="text-center p-3 bg-gray-100 rounded-lg hover:bg-aj-orange hover:text-white transition">
+                    <span class="font-medium">Arlington Recessed Lighting</span>
+                </a>
+                <a href="/locations/virginia/cities/arlington-smart-home.html" class="text-center p-3 bg-gray-100 rounded-lg hover:bg-aj-orange hover:text-white transition">
+                    <span class="font-medium">Arlington Smart Home</span>
+                </a>
+                <a href="/locations/virginia/cities/falls-church.html" class="text-center p-3 bg-gray-100 rounded-lg hover:bg-aj-orange hover:text-white transition">
+                    <span class="font-medium">Falls Church</span>
+                </a>
+                <a href="/locations/virginia/cities/mclean.html" class="text-center p-3 bg-gray-100 rounded-lg hover:bg-aj-orange hover:text-white transition">
+                    <span class="font-medium">McLean</span>
+                </a>
+                <a href="/locations/virginia/cities/alexandria.html" class="text-center p-3 bg-gray-100 rounded-lg hover:bg-aj-orange hover:text-white transition">
+                    <span class="font-medium">Alexandria</span>
+                </a>
+                <a href="/locations/virginia/cities/fairfax.html" class="text-center p-3 bg-gray-100 rounded-lg hover:bg-aj-orange hover:text-white transition">
+                    <span class="font-medium">Fairfax</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standard Footer (loaded via JavaScript) -->
+    <div data-include="/include/standard-footer.html"></div>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="Back to Top" class="fixed bottom-5 right-5 w-12 h-12 rounded-full bg-aj-orange text-white shadow-lg flex items-center justify-center opacity-0 invisible transition-opacity duration-300 hover:bg-gray-800 z-50">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript for chat and other functions -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Chat Widget
+
+            const addMessage = (text, sender = 'user') => {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('mb-2', 'clear-both'); // Use clear-both for alignment
+
+                const p = document.createElement('p');
+                p.classList.add('rounded-lg', 'py-2', 'px-3', 'inline-block', 'max-w-xs', 'text-sm');
+
+                if (sender === 'user') {
+                    p.classList.add('bg-aj-orange', 'text-white', 'float-right'); // Align user message right
+                } else {
+                    p.classList.add('bg-gray-200', 'text-gray-800', 'float-left'); // Align agent message left
+                }
+                p.textContent = text;
+                messageDiv.appendChild(p);
+                chatMessages.appendChild(messageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight; // Auto-scroll
+            };
+
+            const handleSendMessage = () => {
+                 const message = chatInput.value.trim();
+                 if (message) {
+                     addMessage(message, 'user');
+                     chatInput.value = '';
+
+                     // Simulate agent response
+                     setTimeout(() => {
+                         addMessage("Thanks for your message! We typically respond within a few minutes during business hours. For immediate assistance, please call us at 703-997-0026.", 'agent');
+                     }, 1500);
+                 }
+            };
+
+            sendChatBtn.addEventListener('click', handleSendMessage);
+
+            // Back to top button
+            const backToTopButton = document.getElementById('back-to-top');
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('visible');
+                    backToTopButton.classList.remove('invisible', 'opacity-0');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                     backToTopButton.classList.add('invisible', 'opacity-0');
+                }
+            });
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }); // End DOMContentLoaded
+    </script>
+    
+    <!-- JavaScript for including HTML components -->
+    <script src="/js/include-html.js?v=1746948964" defer></script>
+    <!-- Mobile Enhancements -->
+    <script src="/js/mobile-enhancements.js" defer></script>
+    <script src="/js/accessibility-enhancements.js" defer></script>
+</body>

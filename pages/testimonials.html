@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Preconnect to external domains for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta charset="UTF-8">
+    <!-- CRITICAL CSS START -->
+    <style>
+    /* Prevent FOUC - Critical styles that load immediately */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f7fafc; }
+    .hidden { display: none !important; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+    header { background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
+    main { min-height: 50vh; }
+    footer { background: #222; color: #999; padding: 2rem 0; }
+    /* Brand colors to prevent flash */
+    .bg-aj-orange { background-color: #FF7200 !important; }
+    .bg-aj-dark { background-color: #222222 !important; }
+    .text-white { color: white !important; }
+    .text-gray-800 { color: #2d3748 !important; }
+    .bg-gray-100 { background-color: #f7fafc !important; }
+    /* Prevent layout shift */
+    .sticky-nav { position: sticky; top: 0; z-index: 100; }
+    .mobile-menu { position: fixed; right: -100%; }
+    @media (max-width: 768px) {
+      .md\:hidden { display: none !important; }
+    }
+    </style>
+    <!-- CRITICAL CSS END -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Testimonials - AJ Long Electric | Real Reviews from Real Customers</title>
+    <meta name="description" content="Read 1,200+ 5-star customer reviews and testimonials for AJ Long Electric. See what customers say about our electrical services in Northern Virginia, DC & Maryland.">
+    <link rel="canonical" href="https://ajlongelectric.com/testimonials">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/favicon/favicon.png">
+    
+    <!-- Review Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "AJ Long Electric",
+      "url": "https://ajlongelectric.com",
+      "telephone": "703-997-0026",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2724 Dorr Ave, Suite 102",
+        "addressLocality": "Fairfax",
+        "addressRegion": "VA", 
+        "postalCode": "22031",
+        "addressCountry": "US"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "1200",
+        "reviewCount": "1200"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Sarah M."
+          },
+          "reviewBody": "AJ Long Electric did an amazing job upgrading our electrical panel. They were professional, punctual, and cleaned up thoroughly. The work was completed faster than expected and passed inspection on the first try. Highly recommend for any electrical work!",
+          "datePublished": "2024-12-15"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Michael R."
+          },
+          "reviewBody": "Had them install a Tesla Wall Connector in my garage. The electrician was knowledgeable, explained everything clearly, and the installation was perfect. Great pricing and excellent service. Will definitely use them again.",
+          "datePublished": "2024-12-10"
+        },
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating", 
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Jennifer L."
+          },
+          "reviewBody": "AJ Long Electric installed recessed lighting throughout our first floor. The work was exceptional - they were careful with our furniture and floors, and the lighting layout is perfect. Very satisfied with their professionalism and quality.",
+          "datePublished": "2024-12-05"
+        }
+      ]
+    }
+    </script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Mobile Master Override - MUST load last -->
+
+    <!-- Footer Grid Fix - MUST load after mobile-master-override to ensure proper desktop layout -->
+    <!-- Mobile Fixes - Universal and specific fixes for mobile layout issues -->
+    <style>
+        :root {
+            --aj-orange: #FF7200;
+            --aj-dark: #222222;
+        }
+        .bg-aj-orange { background-color: var(--aj-orange); }
+        .text-aj-orange { color: var(--aj-orange); }
+        .bg-aj-dark { background-color: var(--aj-dark); }
+        .text-aj-dark { color: var(--aj-dark); }
+        .border-aj-orange { border-color: var(--aj-orange); }
+        .hover-grow { transition: transform 0.3s ease; }
+        .hover-grow:hover { transform: scale(1.03); }
+
+        .pattern-bg {
+            background-color: var(--aj-dark);
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF7200' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .review-card {
+            transition: all 0.3s ease;
+            min-height: 250px;
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+<!-- Breadcrumb Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ajlongelectric.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Public"
+    }
+  ]
+}
+</script>
+  <script src="/js/header-loader.js?v=1746953030"></script>
+
+    <!-- ========================================
+         CONSOLIDATED CSS STRUCTURE v3.0
+         Load in this specific order for proper cascade
+         ======================================== -->
+
+    <!-- 1. CORE: Base styles, typography, header, navigation, buttons -->
+    <link rel="stylesheet" href="/assets/css/core.css">
+
+    <!-- 2. MOBILE: All mobile optimizations consolidated -->
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+
+    <!-- 3. FOOTER: Desktop 4-col & mobile 1-col layout -->
+    <link rel="stylesheet" href="/assets/css/footer.css">
+
+    <!-- 4. ACCESSIBILITY: WCAG 2.1 Level AA compliance -->
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+
+</head>
+<body class="font-sans antialiased text-gray-800">
+<!-- Include the standard header -->
+<div w3-include-html="/include/standard-header.html"></div><!-- Skip to main content for accessibility -->
+<a href="/#main-content" class="skip-to-main sr-only sr-only-focusable">Skip to main content</a>
+    <div data-include="/include/standard-header.html"></div>
+
+    <section class="pattern-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-fadeInUp">
+                Real Reviews from <span class="text-aj-orange">Real Customers</span>
+            </h1>
+            <p class="text-lg max-w-3xl mx-auto animate-fadeInUp" style="animation-delay: 0.2s;">
+                With over 1,200+ 5-star reviews across multiple platforms, see why customers throughout Northern Virginia 
+                trust AJ Long Electric for all their electrical needs.
+            </p>
+        </div>
+    </section>
+
+    <main id="main-content" role="main" tabindex="-1">
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div id="reviews-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div data-include="/include/standard-footer.html"></div>
+
+    <script src="/js/include-html.js" defer></script>
+    <script src="/js/real-reviews.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const reviewsContainer = document.getElementById('reviews-container');
+            const reviews = REAL_REVIEWS.slice(0, 20); // Show up to 20 reviews
+
+            reviews.forEach(review => {
+                const reviewCard = document.createElement('div');
+                reviewCard.className = 'review-card bg-white rounded-lg shadow-md p-6 border-l-4 border-aj-orange hover-grow';
+                reviewCard.innerHTML = `
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 bg-aj-orange rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">${review.customerName.split(' ').map(word => word.charAt(0)).join('').substring(0, 2).toUpperCase()}</span>
+                        </div>
+                        <div class="ml-3 flex-1">
+                            <h4 class="font-bold text-gray-800">${review.customerName}</h4>
+                            <div class="text-yellow-400 text-sm mb-1">
+                                ${'★'.repeat(review.rating)}
+                            </div>
+                            <p class="text-xs text-gray-400">${review.formattedDate}</p>
+                        </div>
+                    </div>
+                    ${review.comment ? `<p class="text-gray-600 mb-4 italic">"${review.comment}"</p>` : ''}
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-aj-orange font-semibold">${review.service}</span>
+                        <div class="text-green-600 text-xs">
+                            <i class="fas fa-check-circle"></i> Verified Google Review
+                        </div>
+                    </div>
+                `;
+                reviewsContainer.appendChild(reviewCard);
+            });
+        });
+    </script>
+</body>
+</html>

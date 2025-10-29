@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Preconnect to external domains for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Electrical Estimate | Northern VA | AJ Long Electric</title>
+    <meta name="description" content="Get a free electrical estimate from AJ Long Electric. Panel upgrades, EV chargers, repairs & installations. Licensed Northern Virginia electricians. Call (703) 997-0026!">
+
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Load Tailwind CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+
+    <!-- ========================================
+         CONSOLIDATED CSS STRUCTURE v3.0
+         Load in this specific order for proper cascade
+         ======================================== -->
+
+    <!-- 1. CORE: Base styles, typography, header, navigation, buttons -->
+    <link rel="stylesheet" href="/assets/css/core.css">
+
+    <!-- 2. MOBILE: All mobile optimizations consolidated -->
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+
+    <!-- 3. FOOTER: Desktop 4-col & mobile 1-col layout -->
+    <link rel="stylesheet" href="/assets/css/footer.css">
+
+    <!-- 4. ACCESSIBILITY: WCAG 2.1 Level AA compliance -->
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+
+    <!-- 5. FORMS: Estimate form styling -->
+    <link rel="stylesheet" href="/assets/css/forms.css">
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Electrician",
+      "name": "AJ Long Electric",
+      "url": "https://www.ajlongelectric.com",
+      "telephone": "703-997-0026",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fairfax",
+        "addressRegion": "VA",
+        "addressCountry": "US"
+      },
+      "serviceArea": ["DC", "Maryland", "Virginia"],
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- Breadcrumb Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ajlongelectric.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Free Estimate"
+        }
+      ]
+    }
+    </script>
+    <script src="/js/header-loader.js?v=1746953030"></script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-100">
+    <!-- Header -->
+    <div w3-include-html="/include/standard-header.html"></div>
+
+    <!-- Skip to main content for accessibility -->
+    <a href="/#main-content" class="skip-to-main sr-only sr-only-focusable">Skip to main content</a>
+
+    <!-- Page Title Section -->
+    <section class="bg-aj-dark text-white py-16">
+        <div class="container mx-auto px-4" id="main-content" role="main" tabindex="-1">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">Request Your Free <span class="text-aj-orange">Estimate</span></h1>
+                <p class="text-lg max-w-2xl mx-auto">Fill out the form below and we'll provide you with a detailed estimate within 24 hours. Upload photos or videos to help us better understand your project!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Form Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <form id="estimate-form" class="relative">
+                    <!-- Loading State -->
+                    <div id="form-loading" class="form-loading hidden">
+                        <div class="text-center">
+                            <i class="fas fa-spinner fa-spin text-4xl text-aj-orange mb-4"></i>
+                            <p class="text-lg">Submitting your estimate request...</p>
+                        </div>
+                    </div>
+
+                    <!-- Success State -->
+                    <div id="form-success" class="hidden">
+                        <div class="text-center py-12">
+                            <div class="inline-flex items-center justify-center h-16 w-16 rounded-full bg-green-500 text-white text-2xl mb-4">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2">Estimate Request Received!</h3>
+                            <p class="text-gray-600 mb-6">Thank you for your estimate request. We'll review your project details and provide you with a detailed quote within 24 hours.</p>
+                            <div class="bg-gray-50 p-6 rounded-lg mb-6 text-left">
+                                <h4 class="font-semibold text-gray-800 mb-3">What happens next?</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-clock text-aj-orange mr-3"></i>
+                                        We'll review your request within 2-4 hours
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-phone text-aj-orange mr-3"></i>
+                                        We may call you to clarify project details
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-envelope text-aj-orange mr-3"></i>
+                                        You'll receive a detailed estimate via email
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-calendar text-aj-orange mr-3"></i>
+                                        We'll schedule service once you approve the estimate
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="/" class="bg-aj-orange text-white font-bold px-6 py-3 rounded shadow hover:bg-orange-600 transition inline-block">
+                                Return to Home
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Form Content -->
+                    <div id="form-content">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="firstName" class="block text-gray-700 font-medium mb-2">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-aj-orange focus:border-aj-orange" required>
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-gray-700 font-medium mb-2">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-aj-orange focus:border-aj-orange" required>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-aj-orange focus:border-aj-orange" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-aj-orange focus:border-aj-orange" required placeholder="(703) 555-0123">
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="address" class="block text-gray-700 font-medium mb-2">Service Address *</label>
+                            <input type="text" id="address" name="address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-aj-orange focus:border-aj-orange" required placeholder="123 Main Street">
+                        </div>
+
+                        <div class="grid md:grid-cols-3 gap-6 mb-6">
+                            <div>
+                                <label for="city" class="block text-gray-700 font-medium mb-2">City *</label>
+                                <input type="text" id="city" name="city" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-aj-orange focus:border-aj-orange" required>
+                            </div>
+                            <div>
+                                <label for="state" class="block text-gray-700 font-medium mb-2">State *</label>
+                                <select id="state" name="state" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-aj-orange focus:border-aj-orange" required>
+                                    <option value="">Select State</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="DC">Washington DC</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="zip" class="block text-gray-700 font-medium mb-2">Zip Code *</label>
+                                <input type="text" id="zip" name="zip" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-aj-orange focus:border-aj-orange" pattern="[0-9]{5}(-[0-9]{4})?" required>
+                            </div>
+                        </div>
+
+                        <hr class="my-8">
+
+                        <h3 class="text-2xl font-bold mb-6">Project Details</h3>
+
+                        <div class="mb-6">
+                            <label for="description" class="block text-gray-700 font-medium mb-2">Description of Work Requested *</label>
+                            <textarea id="description" name="description" rows="6" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-aj-orange focus:border-aj-orange resize-vertical" required placeholder="Please describe the electrical work you need done. Include as much detail as possible to help us provide an accurate estimate."></textarea>
+                            <p class="text-sm text-gray-500 mt-2">Be specific about what type of electrical work you need - panel upgrades, outlet installation, lighting, EV charger, etc.</p>
+                        </div>
+
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-medium mb-2">Upload Photos or Videos (Optional)</label>
+                            <p class="text-sm text-gray-600 mb-4">Upload photos or videos to help us better understand your project. You can upload up to 10 files. Videos must be 1 minute or less.</p>
+
+                            <div class="drag-drop-zone border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+                                <div class="mb-4">
+                                    <i class="fas fa-cloud-upload-alt text-4xl text-gray-400"></i>
+                                </div>
+                                <h4 class="text-lg font-bold mb-2">Drag & Drop Files Here</h4>
+                                <p class="text-sm text-gray-500 mb-4">or</p>
+
+                                <label for="file-upload" class="inline-block px-4 py-2 bg-gray-200 text-gray-700 rounded-lg cursor-pointer hover:bg-gray-300 transition">
+                                    <i class="fas fa-plus mr-2"></i> Browse Files
+                                    <input type="file" id="file-upload" name="media" multiple accept="image/*,video/*,.heic" class="hidden">
+                                </label>
+
+                                <p class="text-xs text-gray-500 mt-4">Accepted file types: JPG, PNG, HEIC, MP4, MOV</p>
+                            </div>
+
+                            <div id="file-preview" class="file-preview hidden mt-4"></div>
+                        </div>
+
+                        <div class="mt-8">
+                            <label class="flex items-start">
+                                <input type="checkbox" id="terms" name="terms" class="form-checkbox mt-1 w-5 h-5 text-aj-orange border-gray-300 rounded focus:ring-aj-orange" required>
+                                <span class="ml-2 text-sm text-gray-700">I agree to the <a href="/terms-of-service.html" class="text-aj-orange hover:underline" target="_blank">Terms of Service</a> and acknowledge that my information will be used in accordance with the <a href="/privacy-policy.html" class="text-aj-orange hover:underline" target="_blank">Privacy Policy</a>. *</span>
+                            </label>
+                        </div>
+
+                        <div class="mt-8 text-center">
+                            <button type="submit" id="submit-btn" class="px-8 py-4 bg-aj-orange text-white font-bold text-lg rounded-lg shadow hover:bg-orange-600 transition">
+                                <i class="fas fa-paper-plane mr-2"></i> Submit Estimate Request
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div w3-include-html="/include/standard-footer.html"></div>
+
+    <!-- Scripts -->
+    <script src="/js/include-html.js" defer></script>
+    <script src="/js/estimate-simple.js" defer></script>
+
+    <style>
+        .form-loading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        .form-loading.hidden {
+            display: none;
+        }
+
+        .drag-drop-zone.drag-active {
+            border-color: #FF7200;
+            background-color: #FFF7F0;
+        }
+
+        .file-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .file-preview-item {
+            position: relative;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            aspect-ratio: 1;
+        }
+
+        .file-preview-item img,
+        .file-preview-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .file-preview-item .file-type {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 3rem;
+            color: #9ca3af;
+        }
+
+        .file-preview-item .remove-file {
+            position: absolute;
+            top: 0.25rem;
+            right: 0.25rem;
+            width: 2rem;
+            height: 2rem;
+            background: #ef4444;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.25rem;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-center;
+        }
+
+        .file-preview-item .remove-file:hover {
+            background: #dc2626;
+        }
+    </style>
+</body>
+</html>

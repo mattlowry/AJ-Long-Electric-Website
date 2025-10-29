@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Preconnect to external domains for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta charset="UTF-8">
+    <!-- CRITICAL CSS START -->
+    <style>
+    /* Prevent FOUC - Critical styles that load immediately */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f7fafc; }
+    .hidden { display: none !important; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+    header { background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
+    main { min-height: 50vh; }
+    footer { background: #222; color: #999; padding: 2rem 0; }
+    /* Brand colors to prevent flash */
+    .bg-aj-orange { background-color: #FF7200 !important; }
+    .bg-aj-dark { background-color: #222222 !important; }
+    .text-white { color: white !important; }
+    .text-gray-800 { color: #2d3748 !important; }
+    .bg-gray-100 { background-color: #f7fafc !important; }
+    /* Prevent layout shift */
+    .sticky-nav { position: sticky; top: 0; z-index: 100; }
+    .mobile-menu { position: fixed; right: -100%; }
+    @media (max-width: 768px) {
+      .md\:hidden { display: none !important; }
+    }
+    </style>
+    <!-- CRITICAL CSS END -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fairfax Electrical Services | Panel Upgrades, EV Charger Installation & Recessed Lighting | AJ Long Electric</title>
+    <meta name="description" content="Licensed Fairfax electricians offering panel upgrades ($2500-$8000), EV charger installation ($800-$3500), recessed lighting, ceiling fans & electrical repairs. Serving NoVA, DC & MD. 1,200+ 5-star reviews, 5-year warranty. Free estimates 703-997-0026.">
+    <!-- SEO: Meta Keywords -->
+    <meta name="keywords" content="electrical services, electrician, panel upgrade, EV charger installation, recessed lighting, ceiling fan installation, kitchen electrical, bathroom electrical, Northern Virginia, Fairfax, Arlington, Alexandria, DC, Maryland, licensed electrician, electrical contractor">
+    <!-- SEO: Canonical URL -->
+    <link rel="canonical" href="https://ajlongelectric.com/services">
+    <!-- SEO: Geographic Meta Tags -->
+    <meta name="geo.region" content="US-VA">
+    <meta name="geo.placename" content="Fairfax, Virginia">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Electrical Services | Panel Upgrades, EV Chargers, Lighting | AJ Long Electric">
+    <meta property="og:description" content="Professional electrical services in Northern Virginia, DC & Maryland. Panel upgrades, EV charger installation, recessed lighting, ceiling fans, kitchen electrical. 1,200+ 5-star reviews.">
+    <meta property="og:image" content="https://ajlongelectric.com/assets/images/aj-long-electric-og.jpg">
+    <meta property="og:url" content="https://ajlongelectric.com/services.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Electrical Services | Panel Upgrades, EV Chargers, Lighting | AJ Long Electric">
+    <meta name="twitter:description" content="Professional electrical services in Northern Virginia, DC & Maryland. Panel upgrades, EV charger installation, recessed lighting, ceiling fans, kitchen electrical.">
+    <meta name="twitter:image" content="https://ajlongelectric.com/assets/images/aj-long-electric-twitter.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/favicon/favicon.png">
+    
+    <!-- Service Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "ElectricalContractor"],
+      "name": "AJ Long Electric",
+      "url": "https://ajlongelectric.com/services.html",
+      "telephone": "703-997-0026",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2724 Dorr Ave, Suite 102",
+        "addressLocality": "Fairfax",
+        "addressRegion": "VA",
+        "postalCode": "22031",
+        "addressCountry": "US"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Comprehensive Electrical Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Electrical Panel Upgrades & Replacements",
+              "description": "Professional electrical panel replacement and upgrade services. Replace outdated Federal Pacific, Zinsco, or breaker panels with modern, code-compliant electrical panels.",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "AJ Long Electric"
+              },
+              "areaServed": ["Fairfax County", "Arlington County", "Alexandria", "Washington D.C.", "Montgomery County", "Prince George's County"]
+            },
+            "priceRange": "$2500-$8000"
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "EV Charger Installation",
+              "description": "Professional EV charger installation for Tesla, Ford Lightning, Chevy Bolt, and all electric vehicles. Level 2 charging station installation with 240V circuits.",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "AJ Long Electric"
+              },
+              "areaServed": ["Fairfax County", "Arlington County", "Alexandria", "Washington D.C.", "Montgomery County", "Prince George's County"]
+            },
+            "priceRange": "$800-$3500"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Recessed Lighting Installation",
+              "description": "Professional recessed lighting installation and LED retrofits. Expert design consultation, can light installation, dimmer switches, and energy-efficient LED conversion.",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "AJ Long Electric"
+              },
+              "areaServed": ["Fairfax County", "Arlington County", "Alexandria", "Washington D.C.", "Montgomery County", "Prince George's County"]
+            },
+            "priceRange": "$150-$400"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Electrical Services",
+              "description": "24-hour emergency electrical services for electrical outages, sparking outlets, burning smells, tripped breakers, and electrical safety hazards.",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "AJ Long Electric"
+              },
+              "areaServed": ["Fairfax County", "Arlington County", "Alexandria", "Washington D.C.", "Montgomery County", "Prince George's County"]
+            },
+            "priceRange": "$200-$1500"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Battery Backup & Generator Solutions",
+              "description": "Professional installation of modern whole-home battery backup systems including EcoFlow Smart Home Panel, Tesla Powerwall, Generac PWRcell, and traditional standby generators.",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "AJ Long Electric"
+              },
+              "areaServed": ["Fairfax County", "Arlington County", "Alexandria", "Washington D.C.", "Montgomery County", "Prince George's County"]
+            },
+            "priceRange": "$5000-$25000"
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1", 
+        "ratingCount": "1200",
+        "reviewCount": "1200"
+      }
+    }
+    </script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Mobile Master Override - MUST load last -->
+
+    <!-- Footer Grid Fix - MUST load after mobile-master-override to ensure proper desktop layout -->
+    <!-- Mobile Fixes - Universal and specific fixes for mobile layout issues -->
+    <style>
+        /* Custom variables */
+        :root {
+            --aj-orange: #FF7200;
+            --aj-dark: #222222;
+            --aj-light-gray: #f5f5f5;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Utilities */
+        .bg-aj-orange { background-color: var(--aj-orange); }
+        .text-aj-orange { color: var(--aj-orange); }
+        .bg-aj-dark { background-color: var(--aj-dark); }
+        .text-aj-dark { color: var(--aj-dark); }
+        .border-aj-orange { border-color: var(--aj-orange); }
+        .hover-grow { transition: transform 0.3s ease; }
+        .hover-grow:hover { transform: scale(1.03); }
+
+        /* Custom animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 20px, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        .animate-fadeInUp {
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+
+        .pattern-bg {
+            background-color: var(--aj-dark);
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF7200' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Service card hover effect */
+        .service-card {
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+        .service-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-5px);
+        }
+        .service-icon {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover .service-icon {
+            background-color: var(--aj-orange);
+            color: white;
+        }
+
+        /* Sticky header */
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Mobile menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            height: 100%;
+            background-color: white;
+            z-index: 200;
+            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+        }
+        .mobile-menu.active {
+            right: 0;
+        }
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 199;
+            display: none;
+        }
+
+        /* Floating Book Online Button */
+        .floating-book-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: var(--aj-dark);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+        
+        .floating-book-btn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .floating-book-btn:hover {
+            background-color: var(--aj-orange);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 114, 0, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .floating-book-btn {
+                width: 56px;
+                height: 56px;
+                bottom: 16px;
+                right: 16px;
+                font-size: 16px;
+            }
+        }
+
+        </style>
+  <script src="/js/header-loader.js?v=1746953030"></script>
+  <script src="/js/housecall-pro-integration.js?v=1746955357" defer></script>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Services - AJ Long Electric">
+    <meta property="og:description" content="Professional electrical services in Northern Virginia, Maryland, and DC">
+    <meta property="og:image" content="https://ajlongelectric.com/assets/images/aj-long-electric-og.jpg">
+    <meta property="og:url" content="https://ajlongelectric.com/services.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Services - AJ Long Electric">
+    <meta name="twitter:description" content="Professional electrical services in Northern Virginia, Maryland, and DC">
+    <meta name="twitter:image" content="https://ajlongelectric.com/assets/images/aj-long-electric-twitter.jpg">
+
+<!-- Breadcrumb Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ajlongelectric.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Public"
+    }
+  ]
+}
+</script>
+
+    <!-- ========================================
+         CONSOLIDATED CSS STRUCTURE v3.0
+         Load in this specific order for proper cascade
+         ======================================== -->
+
+    <!-- 1. CORE: Base styles, typography, header, navigation, buttons -->
+    <link rel="stylesheet" href="/assets/css/core.css">
+
+    <!-- 2. MOBILE: All mobile optimizations consolidated -->
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+
+    <!-- 3. FOOTER: Desktop 4-col & mobile 1-col layout -->
+    <link rel="stylesheet" href="/assets/css/footer.css">
+
+    <!-- 4. ACCESSIBILITY: WCAG 2.1 Level AA compliance -->
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+
+</head>
+<body class="font-sans antialiased text-gray-800">
+<!-- Include the standard header -->
+<div w3-include-html="/include/standard-header.html"></div><!-- Skip to main content for accessibility -->
+<a href="/#main-content" class="skip-to-main sr-only sr-only-focusable">Skip to main content</a>
+    <!-- Sticky Header -->
+            
+
+
+<!-- Mobile Menu Overlay -->
+
+
+            <!-- Mobile menu is included in standard-header.html -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="p-4 flex justify-between items-center border-b">
+            <div>
+                <h2 class="text-xl font-bold"><span class="text-aj-orange">AJ LONG</span> ELECTRIC</h2>
+            </div>
+            <button id="close-menu" class="text-gray-500 hover:text-gray-800">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <nav class="p-4">
+            <ul class="space-y-4">
+                <li><a href="/" class="block py-2 px-4 hover:bg-gray-100 rounded">Home</a></li>
+                <li><a href="/pages/about.html" class="block py-2 px-4 hover:bg-gray-100 rounded">About Us</a></li>
+                <li><a href="/process.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Our Process</a></li>
+                <li><a href="/pages/services.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Services</a></li>
+                <li><a href="/pages/testimonials.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Testimonials</a></li>
+                <li><a href="/service-areas.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Service Areas</a></li>
+                <li><a href="/resources.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Resources</a></li>
+                <li><a href="/faq.html" class="block py-2 px-4 hover:bg-gray-100 rounded">FAQs</a></li>
+                <li><a href="/pages/blog.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Blog</a></li>
+                <li><a href="/pages/contact.html" class="block py-2 px-4 hover:bg-gray-100 rounded">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main" tabindex="-1">
+    <!-- Page Title -->
+    <section class="py-8 pattern-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4 animate-fadeInUp" style="color: #FFFFFF !important;">Our <span class="text-aj-orange">Electrical</span> Services</h2>
+            <p class="text-lg max-w-3xl mx-auto animate-fadeInUp" style="animation-delay: 0.2s; color: #FFFFFF !important;">
+                We offer a comprehensive range of residential electrical services in Fairfax County and the surrounding areas,
+                with a focus on safety, quality workmanship, and customer satisfaction.
+            </p>
+        </div>
+    </section>
+
+    <!-- All Services Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <a href="/services/panel-replacements/" class="block group">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/Services/Electrical-Panel-Upgrade-Services-fairfax-va.jpg" alt="Professional electrical panel upgrade installation - Northern Virginia certified electrician" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Panel Replacements & Upgrades</h3>
+                            <p class="text-gray-600 mb-4">Upgrade your outdated or hazardous electrical panel with our safe and code-compliant installations.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+                
+                <!-- Service 2 -->
+                <a href="/services/recessed-lighting/" class="block group">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/Services/Recessed-Light-Install-Fairfax-va.jpeg" alt="Professional recessed lighting installation - Northern Virginia LED lighting contractor" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Recessed Lighting Installation</h3>
+                            <p class="text-gray-600 mb-4">Transform your space with modern, energy-efficient LED recessed lighting installed by our expert technicians.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+                
+                <!-- Service 3 -->
+                <a href="/services/ev-charger-installation/" class="block group">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/Services/EV-Charger-Install-Fairfax-va.jpeg" alt="Professional EV charger installation - Northern Virginia electric vehicle charging station setup" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">EV Charger Installation</h3>
+                            <p class="text-gray-600 mb-4">Charge your electric vehicle at home with our professional Level 2 EV charger installations.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+                
+                <!-- Service 4 -->
+                <a href="/services/kitchen-electrical/" class="block group">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/Services/Under-Cabinet-Light-Install-ktichen-fairfax-va.jpg" alt="Professional recessed lighting installation - Northern Virginia LED lighting contractor" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Kitchen Electrical Services</h3>
+                            <p class="text-gray-600 mb-4">Upgrade your kitchen with new circuits, under-cabinet lighting, and modern electrical solutions.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+                
+                <!-- Service 5 -->
+                <a href="/services/ceiling-fans/" class="block group">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/Services/Ceiling-Fan-Install-Electrical-Services-Fairfax.jpeg" alt="Ceiling fan installation and repair - Northern Virginia electrical contractor services" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Ceiling Fan Installation</h3>
+                            <p class="text-gray-600 mb-4">Improve comfort and air circulation with our professional ceiling fan installation services.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+                
+                <!-- Service 6 -->
+                <a href="/locations/virginia/cities/fairfax-troubleshooting-repairs.html" class="block group">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/Services/Repair-powerloss-electrical-panel-va.jpeg" alt="Professional electrical panel upgrade installation - Northern Virginia certified electrician" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Troubleshooting & Repairs</h3>
+                            <p class="text-gray-600 mb-4">Resolve electrical issues quickly and safely with our expert troubleshooting and repair services.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 7 - Surge Protection -->
+                <a href="/services/surge-protection/" class="block group">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/gallery/surge-smart-dimmer/Surge-Protector-Install.jpg" alt="Smart home electrical automation - Northern Virginia intelligent wiring systems" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Surge Protection</h3>
+                            <p class="text-gray-600 mb-4">Protect your home's electrical system and sensitive electronics from damaging power surges with whole-house surge protection.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 8 - Smart Home -->
+                <a href="/services/smart-home-electrical/" class="block group">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/gallery/surge-smart-dimmer/smart-dimmer-switch.jpg" alt="Smart home electrical automation - Northern Virginia intelligent wiring systems" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Smart Home Integration</h3>
+                            <p class="text-gray-600 mb-4">Upgrade to smart switches, dimmers, and outlets to enable home automation and voice control of your electrical systems.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 9 - Electrical Inspections -->
+                <a href="/services/electrical-inspections/" class="block group">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/gallery/panel/Electrical-Panel-open.jpg" alt="Professional electrical panel upgrade installation - Northern Virginia certified electrician" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Electrical Inspections</h3>
+                            <p class="text-gray-600 mb-4">Comprehensive safety inspections to identify potential hazards in your home's electrical system, especially for older homes.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 10 - Outdoor Lighting -->
+                <a href="/services/outdoor-lighting/" class="block group hover:shadow-xl transition-shadow duration-300">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/gallery/outdoor/outdoor-patio-va.webp" alt="Outdoor electrical services - Northern Virginia exterior lighting and outlet installation" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Outdoor & Landscape Lighting</h3>
+                            <p class="text-gray-600 mb-4">Enhance your property's beauty, safety, and security with professional outdoor lighting installations.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 11 - Battery Backup & Generator Solutions -->
+                <a href="/services/battery-backup-solutions.html" class="block group hover:shadow-xl transition-shadow duration-300">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/TBD/back up generator.webp" alt="Modern battery backup and whole home generator solutions - EcoFlow, Tesla Powerwall, Generac" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Generator Solutions - Battery & Gas</h3>
+                            <p class="text-gray-600 mb-4">Modern whole-home battery systems and generators. EcoFlow Smart Home Panel, Tesla Powerwall, Generac PWRcell, and more.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Service 12 - GFCI Outlet Installation -->
+                <a href="/services/gfci-outlets/" class="block group hover:shadow-xl transition-shadow duration-300">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/gallery/kitchen/GFCI-Outlet-Kitchen.jpeg" alt="Kitchen electrical services - Northern Virginia GFCI outlet installation contractor" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">GFCI Outlet Installation</h3>
+                            <p class="text-gray-600 mb-4">Protect your family with properly installed GFCI outlets in kitchens, bathrooms, and outdoor areas.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 13 - Circuit Breaker Replacement -->
+                <a href="/services/circuit-breaker-replacement/" class="block group hover:shadow-xl transition-shadow duration-300">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/Services/Circuit-breaker-replacement-services.jpg" alt="Circuit Breaker Replacement Services by licensed Northern Virginia electrical contractor" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Circuit Breaker Replacement</h3>
+                            <p class="text-gray-600 mb-4">Replace faulty or outdated circuit breakers to restore safe power distribution throughout your home.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 14 - Dedicated Circuit Installation -->
+                <a href="/services/dedicated-circuits/" class="block group hover:shadow-xl transition-shadow duration-300">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/gallery/panel/Electrical-Panel-open.jpg" alt="Professional electrical panel upgrade installation - Northern Virginia certified electrician" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Dedicated Circuit Installation</h3>
+                            <p class="text-gray-600 mb-4">Install dedicated circuits for high-power appliances like washers, dryers, and kitchen equipment.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 15 - Smoke Detector Installation -->
+                <a href="/services/smoke-detectors/" class="block group hover:shadow-xl transition-shadow duration-300">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/Services/Smoke-detector-installation-services.jpg" alt="Smoke Detector Installation Services by licensed Northern Virginia electrical contractor" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Smoke Detector Installation</h3>
+                            <p class="text-gray-600 mb-4">Protect your family with properly wired smoke detectors and carbon monoxide detectors throughout your home.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 16 - Chandelier Installation -->
+                <a href="/services/chandelier-installation/" class="block group hover:shadow-xl transition-shadow duration-300">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/Services/Chandelier-installation-electrical-services.jpeg" alt="Chandelier Installation Services by licensed Northern Virginia electrical contractor" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Chandelier Installation</h3>
+                            <p class="text-gray-600 mb-4">Professional installation of chandeliers and heavy light fixtures with proper electrical support.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 17 - Dimmer Switch Installation -->
+                <a href="/services/dimmer-switches/" class="block group hover:shadow-xl transition-shadow duration-300">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/Services/Dimmer-switch-installation-services.jpg" alt="Dimmer Switch Installation Services by licensed Northern Virginia electrical contractor" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Dimmer Switch Installation</h3>
+                            <p class="text-gray-600 mb-4">Control your lighting ambiance with professional dimmer switch installation for any room.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 18 - USB Outlet Installation -->
+                <a href="/services/usb-outlets/" class="block group hover:shadow-xl transition-shadow duration-300">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/Services/Usb-outlet-Installation-services.jpeg" alt="GFCI outlet installation - Northern Virginia electrical safety code compliance services" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">USB Outlet Installation</h3>
+                            <p class="text-gray-600 mb-4">Upgrade to modern USB outlets for convenient device charging without bulky adapters.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 19 - Bathroom Exhaust Fan Installation -->
+                <a href="/services/bathroom-exhaust-fans/" class="block group hover:shadow-xl transition-shadow duration-300">
+                    <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                        <div class="h-48 overflow-hidden">
+                            <img src="/assets/images/gallery/fan/Ceiling-fan-install.jpg" alt="Ceiling fan installation and repair - Northern Virginia electrical contractor services" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Bathroom Exhaust Fan Installation</h3>
+                            <p class="text-gray-600 mb-4">Improve air quality and prevent moisture damage with properly installed bathroom exhaust fans.</p>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></span>
+                            </div>
+                    </div>
+                                    </div>
+                </a>
+
+                <!-- Service 20 - Motion Sensor Lighting -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/images/gallery/outdoor/outdoor-patio-va.webp" alt="Outdoor electrical services - Northern Virginia exterior lighting and outlet installation" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Motion Sensor Lighting</h3>
+                        <p class="text-gray-600 mb-4">Enhance security and convenience with motion-activated lighting for indoor and outdoor areas.</p>
+                        <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                            <a href="/services/motion-sensor-lights/" class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 21 - Pool & Hot Tub Wiring -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/images/Services/Hot-tub-Install-services.jpg" alt="Pool and Hot Tub Electrical Services by licensed Northern Virginia electrical contractor" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Pool & Hot Tub Wiring</h3>
+                        <p class="text-gray-600 mb-4">Safe electrical installation for pools, hot tubs, and spa equipment with proper bonding and GFCI protection.</p>
+                        <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                            <a href="/services/pool-electrical/" class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 22 - Home Theater Wiring -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/images/service-areas/virginia/burke/Electrical-install-home-theater.jpg" alt="Home theater electrical wiring - Northern Virginia entertainment system installation" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Home Theater Wiring</h3>
+                        <p class="text-gray-600 mb-4">Complete electrical setup for home theaters including outlets, lighting controls, and equipment power.</p>
+                        <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                            <a href="/services/home-theater-wiring/" class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 23 - Aluminum Wiring Replacement -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/images/Services/alumnimum-wiring-replacement-services.jpg" alt="Aluminum Wiring Replacement Services by licensed Northern Virginia electrical contractor" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Aluminum Wiring Replacement</h3>
+                        <p class="text-gray-600 mb-4">Replace dangerous aluminum wiring with safer copper wiring to protect your home from fire hazards.</p>
+                        <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                            <a href="/services/aluminum-wiring-replacement/" class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 24 - Knob & Tube Replacement -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/images/Services/Knob-tube-wiring-replacement-serivces.jpg" alt="Knob and Tube Wiring Replacement Services by licensed Northern Virginia electrical contractor" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Knob & Tube Replacement</h3>
+                        <p class="text-gray-600 mb-4">Upgrade dangerous knob and tube wiring to modern, safe electrical systems that meet current codes.</p>
+                        <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                            <a href="/services/knob-tube-replacement/" class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 25 - Electrical Code Updates -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/images/gallery/panel/Gallery-After-ElectricalPanel.jpg" alt="New electrical panel after professional upgrade - Northern Virginia licensed electrician" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Electrical Code Updates</h3>
+                        <p class="text-gray-600 mb-4">Bring your electrical system up to current code standards for safety, insurance, and resale value.</p>
+                        <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                            <a href="/services/code-updates/" class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 26 - Energy Efficiency Upgrades -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/images/gallery/lighting/2-Story-Chandelier-Install-reston.jpg" alt="Professional recessed lighting installation - Northern Virginia LED lighting contractor" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Energy Efficiency Upgrades</h3>
+                        <p class="text-gray-600 mb-4">Reduce energy costs with LED lighting, efficient controls, and smart electrical solutions.</p>
+                        <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                            <a href="/services/energy-efficiency/" class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 27 - Electrical Service Upgrades -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/images/gallery/panel/panelbyside.webp" alt="Professional electrical panel upgrade installation - Northern Virginia certified electrician" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Electrical Service Upgrades</h3>
+                        <p class="text-gray-600 mb-4">Upgrade your main electrical service from 100 to 200 amp for increased power capacity and modern demands.</p>
+                        <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                            <a href="/services/service-upgrades/" class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 28 - Emergency Electrical Repairs -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/assets/images/gallery/panel/tripped breaker.jpeg" alt="Professional electrical panel upgrade installation - Northern Virginia certified electrician" class="w-full h-full object-cover transition-all duration-300 hover:scale-105" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Emergency Electrical Repairs</h3>
+                        <p class="text-gray-600 mb-4">24/7 emergency electrical services for power outages, sparking outlets, and urgent safety issues.</p>
+                        <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                            <a href="/services/emergency-repairs/" class="text-aj-orange font-semibold hover:underline">View Details <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a href="tel:7039970026" class="text-aj-orange font-semibold hover:underline">Call Now <i class="fas fa-phone ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Why Choose <span class="text-aj-orange">AJ Long Electric</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">We're committed to excellence in every electrical project we undertake</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-aj-orange text-white flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Licensed & Insured</h3>
+                    <p class="text-gray-600">Our technicians are fully licensed and insured, ensuring your electrical work is done safely and up to code.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-aj-orange text-white flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-check text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">5-Year Warranty</h3>
+                    <p class="text-gray-600">All our work comes with a comprehensive 5-year warranty, giving you peace of mind and protection.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-aj-orange text-white flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-dollar-sign text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Transparent Pricing</h3>
+                    <p class="text-gray-600">We provide detailed estimates with no hidden fees, so you know exactly what you're paying for.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-aj-orange text-white flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Prompt Service</h3>
+                    <p class="text-gray-600">We respect your time with punctual arrivals and efficient work completion on every project.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-aj-orange text-white flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tools text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Quality Materials</h3>
+                    <p class="text-gray-600">We use only high-quality, code-compliant materials and products on all our installations.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 rounded-full bg-aj-orange text-white flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Outstanding Reputation</h3>
+                    <p class="text-gray-600">With over 1,200 5-star reviews, our track record speaks for itself. Read what our customers have to say!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services by Location Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Electrical <span class="text-aj-orange">Services</span> by Location</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Find specialized electrical services in your area across Virginia, Washington DC, and Maryland</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Fairfax Column -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-map-marker-alt text-aj-orange mr-2"></i> Fairfax
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="/locations/virginia/cities/fairfax.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Electrical Services in Fairfax</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/locations/virginia/cities/fairfax-troubleshooting-repairs.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Troubleshooting & Repairs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/locations/virginia/cities/fairfax-county.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Fairfax County Services</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Vienna Column -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-map-marker-alt text-aj-orange mr-2"></i> Vienna
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="/locations/virginia/cities/vienna.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Electrical Services in Vienna</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/locations/virginia/cities/vienna-ceiling-fans.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Ceiling Fan Installation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Alexandria Column -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-map-marker-alt text-aj-orange mr-2"></i> Alexandria
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="/locations/virginia/cities/alexandria.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Electrical Services in Alexandria</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/locations/virginia/cities/alexandria-kitchen-electrical.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Kitchen Electrical Services</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/locations/virginia/cities/old-town-alexandria.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Old Town Alexandria Services</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Arlington Column -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-map-marker-alt text-aj-orange mr-2"></i> Arlington
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="/locations/virginia/cities/arlington.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Electrical Services in Arlington</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/locations/virginia/cities/arlington-recessed-lighting.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Recessed Lighting Installation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/locations/virginia/cities/arlington-smart-home.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Smart Home Integration</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- DC Column -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-map-marker-alt text-aj-orange mr-2"></i> Washington DC
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="/dc-electrical-services/washington-dc.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Electrical Services in DC</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/dc-electrical-services/georgetown.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Georgetown</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/dc-electrical-services/capitol-hill.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Capitol Hill</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- DC Column 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-map-marker-alt text-aj-orange mr-2"></i> DC Neighborhoods
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="/dc-electrical-services/dupont-circle.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Dupont Circle</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/dc-electrical-services/foggy-bottom.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Foggy Bottom</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/dc-electrical-services/northwest-dc.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Northwest DC</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- DC Column 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-map-marker-alt text-aj-orange mr-2"></i> DC Quadrants
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="/dc-electrical-services/northeast-dc.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Northeast DC</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/dc-electrical-services/southeast-dc.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Southeast DC</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/dc-electrical-services/southwest-dc.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Southwest DC</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Maryland Column (Adjusted) -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-map-marker-alt text-aj-orange mr-2"></i> Maryland
+                    </h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="/maryland-electrical-services/bethesda.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Bethesda</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/maryland-electrical-services/silver-spring.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Silver Spring</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/maryland-electrical-services/potomac.html" class="text-gray-700 hover:text-aj-orange transition flex items-center">
+                                <i class="fas fa-angle-right mr-2 text-aj-orange"></i> 
+                                <span>Potomac</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="/service-areas.html" class="inline-block bg-aj-orange text-white font-bold px-8 py-3 rounded shadow hover:bg-gray-800 transition">
+                    View All Service Areas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to get started on your electrical project?</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Contact us today for a free, detailed estimate. We'll provide transparent pricing and a comprehensive work plan.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="/pages/contact.html" class="bg-aj-orange text-white font-bold px-8 py-3 rounded shadow hover:bg-gray-800 transition">
+                    Contact Us
+                </a>
+                <a href="tel:7039970026" class="border-2 border-aj-orange text-aj-orange font-bold px-8 py-3 rounded hover:bg-aj-orange hover:text-white transition">
+                    <i class="fas fa-phone mr-2"></i> Call (703) 997-0026
+                </a>
+            </div>
+        </div>
+    </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-aj-dark text-gray-300 py-12" role="contentinfo">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Column 1: About -->
+                <div>
+                     <div class="flex items-center mb-4">
+                        <img src="/assets/logos/ajlelogo_white.png" alt="AJ Long Electric - Licensed Electrician Northern Virginia" class="h-12 mr-3" loading="lazy">
+                        <h3 class="text-xl font-bold text-white"><span class="text-aj-orange">AJ LONG</span> ELECTRIC</h3>
+                    </div>
+                    <p class="mb-4 text-sm">Your trusted family-owned electricians serving Northern VA, DC & MD since 1996. Over 1,200 5-star reviews.</p>
+                    <p class="flex items-center mb-2">
+                        <i class="fas fa-phone mr-2 text-aj-orange"></i>
+                        <a href="tel:7039970026" class="hover:text-aj-orange transition">703-997-0026</a>
+                    </p>
+                     <div class="flex text-sm">
+                        <i class="fas fa-map-marker-alt mr-2 text-aj-orange mt-0.5"></i>
+                        <div>
+                            <div><span class="font-semibold">Main Office:</span> 2724 Dorr Ave</div>
+                            <div>Suite 102, Fairfax, VA 22031</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Services -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-2">Popular Services</h4>
+                    <ul class="space-y-1 text-sm">
+                        <li><a href="/services.html#panel-upgrades" class="hover:text-aj-orange transition">Panel Replacements & Upgrades</a></li>
+                        <li><a href="/services.html#recessed-lighting" class="hover:text-aj-orange transition">Recessed Lighting</a></li>
+                        <li><a href="/services.html#ev-chargers" class="hover:text-aj-orange transition">EV Charger Installation</a></li>
+                        <li><a href="/services.html#kitchen-electrical" class="hover:text-aj-orange transition">Kitchen & Bath Electrical</a></li>
+                        <li><a href="/services.html#ceiling-fans" class="hover:text-aj-orange transition">Ceiling Fan Installation</a></li>
+                        <li><a href="/services.html#repairs" class="hover:text-aj-orange transition">Troubleshooting & Repairs</a></li>
+                         <li><a href="/pages/services.html" class="hover:text-aj-orange transition font-semibold">View All Services...</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Service Areas -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-2">Key Service Areas</h4>
+                    <div class="grid grid-cols-2 gap-x-4 text-sm">
+                        <div>
+                            <h5 class="font-semibold text-gray-100 mb-1">Virginia</h5>
+                            <ul class="space-y-1">
+                                <li><a href="/locations/virginia/cities/fairfax.html" class="hover:text-aj-orange transition">Fairfax</a></li>
+                                <li><a href="/locations/virginia/cities/arlington.html" class="hover:text-aj-orange transition">Arlington</a></li>
+                                <li><a href="/locations/virginia/cities/alexandria.html" class="hover:text-aj-orange transition">Alexandria</a></li>
+                                <li><a href="/locations/virginia/cities/vienna.html" class="hover:text-aj-orange transition">Vienna</a></li>
+                                <li><a href="/locations/virginia/cities/mclean.html" class="hover:text-aj-orange transition">McLean</a></li>
+                                 <li><a href="/locations/virginia/cities/burke.html" class="hover:text-aj-orange transition">Burke</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                             <h5 class="font-semibold text-gray-100 mb-1">DC & Maryland</h5>
+                             <ul class="space-y-1">
+                                <li><a href="/dc-electrical-services/washington-dc.html" class="hover:text-aj-orange transition">Washington DC</a></li>
+                                <li><a href="/maryland-electrical-services/montgomery-county.html" class="hover:text-aj-orange transition">Montgomery Co.</a></li>
+                                <li><a href="/maryland-electrical-services/prince-georges-county.html" class="hover:text-aj-orange transition">Prince George's Co.</a></li>
+                                 <li><a href="/maryland-electrical-services/bethesda.html" class="hover:text-aj-orange transition">Bethesda</a></li>
+                                <li><a href="/maryland-electrical-services/silver-spring.html" class="hover:text-aj-orange transition">Silver Spring</a></li>
+                                <li><a href="/maryland-electrical-services/bowie.html" class="hover:text-aj-orange transition">Bowie</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <a href="/service-areas.html" class="inline-block mt-3 text-aj-orange font-semibold hover:underline text-sm">View All Areas... <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <!-- Column 4: Connect -->
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Connect With Us</h4>
+                    <div class="flex space-x-3 mb-4">
+                         <a href="https://www.facebook.com/AJLongElectric" target="_blank" rel="noopener noreferrer" aria-label="AJ Long Electric on Facebook" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-aj-orange transition">
+                             <i class="fab fa-facebook-f"></i>
+                         </a>
+                         <a href="https://g.co/kgs/smNu5bB" target="_blank" rel="noopener noreferrer" aria-label="AJ Long Electric on Google" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-aj-orange transition">
+                             <i class="fab fa-google"></i>
+                         </a>
+                         <a href="https://www.instagram.com/ajlongelectric" target="_blank" rel="noopener noreferrer" aria-label="AJ Long Electric on Instagram" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-aj-orange transition">
+                             <i class="fab fa-instagram"></i>
+                         </a>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5 class="font-semibold text-gray-100 mb-2 text-sm">Additional Locations:</h5>
+                        <div class="text-xs text-gray-400 space-y-1">
+                            <div>7138 Little River Turnpike #305, Annandale, VA</div>
+                            <div>5244 Lyngate Ct, Burke, VA</div>
+                            <div>15518 Orchard Run Dr, Bowie, MD</div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-sm font-semibold">Licensed, Bonded, and Insured</p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm mb-4">
+                    <p>&copy; <span id="copyright-year"></span> AJ Long Electric. All rights reserved.</p>
+                    <div class="mt-2 md:mt-0 text-center">
+                        <p class="text-xs text-gray-400">VA License #: 2705031092 | MD License #: 3309 | DC License #: EM40000654</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 space-x-4">
+                        <a href="/privacy-policy.html" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                        <a href="/terms-of-service.html" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+                        <a href="/sitemap.xml" class="text-gray-400 hover:text-white transition">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Floating Book Online Button -->
+    <button id="floating-book-btn" class="floating-book-btn" data-token="4bcbc2f7231b4633abc97173fe9db382" data-orgname="AJ-Long-Electric" onClick="HCPWidget.openModal()" aria-label="Book Online">
+        <i class="fas fa-calendar-alt"></i>
+    </button>
+
+    <!-- Mobile Enhancements -->
+    <script src="/js/mobile-enhancements.js" defer></script>
+    <script src="/js/fix-tap-targets.js" defer></script>
+    <script src="/js/accessibility-enhancements.js" defer></script>
+    
+    <!-- Floating Button Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const floatingBtn = document.getElementById('floating-book-btn');
+            let isVisible = false;
+            
+            function toggleFloatingButton() {
+                const scrolled = window.pageYOffset;
+                const shouldShow = scrolled > 100;
+                
+                if (shouldShow && !isVisible) {
+                    floatingBtn.classList.add('show');
+                    isVisible = true;
+                } else if (!shouldShow && isVisible) {
+                    floatingBtn.classList.remove('show');
+                    isVisible = false;
+                }
+            }
+            
+            // Throttle scroll events for better performance
+            let ticking = false;
+            function requestTick() {
+                if (!ticking) {
+                    requestAnimationFrame(toggleFloatingButton);
+                    ticking = true;
+                    setTimeout(() => { ticking = false; }, 10);
+                }
+            }
+            
+            window.addEventListener('scroll', requestTick);
+            
+            // Initial check
+            toggleFloatingButton();
+        });
+    </script>
+    <!-- Header Include Scripts -->
+    <script src="/js/include-html.js"></script>
+</body>
+</html>

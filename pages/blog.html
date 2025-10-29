@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Preconnect to external domains for better performance -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://cdnjs.cloudflare.com" rel="preconnect"/>
+<link href="https://identity.netlify.com" rel="dns-prefetch"/>
+<meta charset="utf-8"/>
+<!-- CRITICAL CSS START -->
+<style>
+/* Prevent FOUC - Critical styles that load immediately */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f7fafc; }
+.hidden { display: none !important; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+header { background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
+main { min-height: 50vh; }
+footer { background: #222; color: #999; padding: 2rem 0; }
+/* Brand colors to prevent flash */
+.bg-aj-orange { background-color: #FF7200 !important; }
+.bg-aj-dark { background-color: #222222 !important; }
+.text-white { color: white !important; }
+.text-gray-800 { color: #2d3748 !important; }
+.bg-gray-100 { background-color: #f7fafc !important; }
+/* Prevent layout shift */
+.sticky-nav { position: sticky; top: 0; z-index: 100; }
+.mobile-menu { position: fixed; right: -100%; }
+@media (max-width: 768px) {
+  .md\:hidden { display: none !important; }
+}
+</style>
+<!-- CRITICAL CSS END -->
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Electrical Tips & Guides | Northern VA | AJ Long Electric</title>
+<meta content="Expert electrical tips & guides from Northern Virginia's trusted electricians. Panel upgrades, EV chargers, safety tips. Call AJ Long Electric (703) 997-0026!" name="description"/>
+<!-- Open Graph Meta Tags -->
+<meta content="Electrical Tips &amp; Insights Blog - AJ Long Electric | Northern Virginia" property="og:title"/>
+<meta content="Get expert electrical tips, maintenance advice, EV charger guides, panel upgrade info, and more from Northern Virginia's trusted electricians at AJ Long Electric. Serving Fairfax, Arlington, Alexandria." property="og:description"/>
+<meta content="https://ajlongelectric.com/assets/images/aj-long-electric-og.jpg" property="og:image"/>
+<meta content="https://ajlongelectric.com/blog.html" property="og:url"/>
+<meta content="website" property="og:type"/>
+<!-- Twitter Card Meta Tags -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Electrical Tips &amp; Insights Blog - AJ Long Electric | Northern Virginia" name="twitter:title"/>
+<meta content="Get expert electrical tips, maintenance advice, EV charger guides, panel upgrade info, and more from Northern Virginia's trusted electricians at AJ Long Electric. Serving Fairfax, Arlington, Alexandria." name="twitter:description"/>
+<meta content="https://ajlongelectric.com/assets/images/aj-long-electric-twitter.jpg" name="twitter:image"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <!-- Mobile Master Override - MUST load last -->
+
+    <!-- Footer MASTER CSS - NUCLEAR OPTION - MUST load LAST to win all cascade wars -->
+
+    <!-- Mobile Fixes - Specific fixes for mobile layout issues -->
+    <style>
+        /* Custom variables */
+        :root {
+            --aj-orange: #FF7200;
+            --aj-dark: #222222;
+            --aj-light-gray: #f5f5f5;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .bg-aj-orange { background-color: var(--aj-orange); }
+        .text-aj-orange { color: var(--aj-orange); }
+        .bg-aj-dark { background-color: var(--aj-dark); }
+        .text-aj-dark { color: var(--aj-dark); }
+        .border-aj-orange { border-color: var(--aj-orange); }
+        .hover-grow { transition: transform 0.3s ease; }
+        .hover-grow:hover { transform: scale(1.03); }
+        @keyframes fadeInUp { from { opacity: 0; transform: translate3d(0, 20px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
+        .animate-fadeInUp { animation: fadeInUp 0.5s ease-out forwards; }
+        .pattern-bg {
+            background-color: var(--aj-dark);
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF7200' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .blog-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .blog-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+        .category-badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.025em; }
+        .date-badge { font-size: 0.875rem; color: #6b7280; }
+        .blog-card h3 a:hover, .blog-card .text-aj-orange:hover { text-decoration: underline; }
+
+        /* Blog Filter & Search Styles */
+        .blog-filters { background: white; padding: 2rem; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+        .category-filter-btn { padding: 0.5rem 1rem; margin: 0.25rem; border: 2px solid #e2e8f0; border-radius: 9999px; background: white; color: #4a5568; font-weight: 600; font-size: 0.875rem; cursor: pointer; transition: all 0.3s ease; }
+        .category-filter-btn:hover { border-color: #FF7200; color: #FF7200; }
+        .category-filter-btn.active { background: #FF7200; color: white; border-color: #FF7200; }
+        .blog-search-input { width: 100%; padding: 0.75rem 1rem 0.75rem 2.5rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem; transition: border-color 0.3s ease; }
+        .blog-search-input:focus { outline: none; border-color: #FF7200; }
+        .blog-sort-select { padding: 0.75rem 1rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem; background: white; cursor: pointer; }
+        .blog-sort-select:focus { outline: none; border-color: #FF7200; }
+        .no-results { text-align: center; padding: 4rem 2rem; color: #718096; }
+        .search-icon { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: #9ca3af; }
+    </style>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Electrical Tips & Insights Blog - AJ Long Electric | Northern Virginia",
+      "description": "Expert electrical tips, maintenance advice, EV charger guides, panel upgrade info, and more from Northern Virginia's trusted electricians at AJ Long Electric. Serving Fairfax, Arlington, Alexandria.",
+      "url": "https://www.ajlongelectric.com/blog.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "AJ Long Electric",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.ajlongelectric.com/assets/logos/AJLongElectric-Logo.png"
+        }
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/ev-charger-installation-guide-nova.html" },
+          "headline": "The Complete Guide to EV Charger Installation for Homeowners",
+          "image": "https://www.ajlongelectric.com/assets/images/gallery/ev/Tesla-EV-Charger.jpg",
+          "datePublished": "2023-05-03", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "As electric vehicles become increasingly popular, many homeowners are considering installing EV chargers in their homes. This comprehensive guide covers everything from the different types of EV chargers to installation considerations and costs in Northern Virginia."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/smart-home-electrical-wiring-northern-virginia.html" },
+          "headline": "Smart Home Electrical Wiring Guide for Northern Virginia",
+          "image": "https://www.ajlongelectric.com/assets/images/smart-home-electrical-control-panel.jpg",
+          "datePublished": "2025-01-20", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Transform your Fairfax home with intelligent electrical systems and automation technology."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/panel-upgrade-guide-northern-virginia.html" },
+          "headline": "Complete Guide to Electrical Panel Upgrades in Northern Virginia",
+          "image": "https://www.ajlongelectric.com/assets/images/gallery/panel/Gallery-After-ElectricalPanel.jpg",
+          "datePublished": "2025-01-20", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Expert guide to panel upgrades including costs, permits, and safety considerations for Arlington homes."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/gfci-outlet-installation-safety-nova.html" },
+          "headline": "GFCI Outlet Installation and Safety Guide",
+          "image": "https://www.ajlongelectric.com/assets/images/gallery/kitchen/GFCI-Near-Sink.jpg",
+          "datePublished": "2025-01-20", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Complete guide to GFCI outlets including installation, testing, and code requirements for McLean homes."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/electrical-safety-code-compliance-virginia.html" },
+          "headline": "Virginia Electrical Safety and Code Compliance Guide",
+          "image": "https://www.ajlongelectric.com/assets/images/virginia-electrical-code-compliance.jpg",
+          "datePublished": "2025-01-20", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Essential knowledge for Fairfax County homeowners about electrical safety standards and legal requirements."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/aluminum-wiring-replacement-safety-nova.html" },
+          "headline": "Aluminum Wiring Replacement and Safety Guide for Northern Virginia",
+          "image": "https://www.ajlongelectric.com/assets/images/aluminum-wiring-hazard-virginia.jpg",
+          "datePublished": "2025-01-20", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Learn about the fire hazards of aluminum wiring and professional replacement options for Vienna homes."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/recessed-lighting-layout-planning-nova.html" },
+          "headline": "Recessed Lighting: Planning Your Perfect Layout",
+          "image": "https://www.ajlongelectric.com/assets/images/gallery/lighting/Recesse-Lighting-install.jpeg",
+          "datePublished": "2023-03-28", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Discover the best practices for planning recessed lighting placement to maximize illumination and enhance your home's interior design in Northern Virginia."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/signs-electrical-panel-upgrade-nova.html" },
+          "headline": "5 Signs You Need an Electrical Panel Upgrade",
+          "image": "https://www.ajlongelectric.com/assets/images/gallery/panel/Gallery-After-ElectricalPanel.jpg",
+          "datePublished": "2023-04-15", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Learn the key indicators that your home's electrical panel may be outdated and ready for an upgrade to improve safety and efficiency in your NoVA home."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/gfci-outlets-explained-safety-nova.html" },
+          "headline": "GFCI Outlets Explained: Safety for Northern Virginia Homes",
+          "image": "https://www.ajlongelectric.com/assets/images/gallery/kitchen/GFCI-Near-Sink.jpg",
+          "datePublished": "2025-01-15", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Understanding GFCI outlets and their critical role in electrical safety for your home."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/whole-home-surge-protection-benefits-nova.html" },
+          "headline": "Benefits of Whole Home Surge Protection in Northern Virginia",
+          "image": "https://www.ajlongelectric.com/assets/images/surge-protection-device-nova.jpg",
+          "datePublished": "2025-01-10", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Protect your electronics and appliances with whole home surge protection systems."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/choose-electrical-company-northern-virginia.html" },
+          "headline": "How to Choose the Right Electrical Company in Northern Virginia",
+          "image": "https://www.ajlongelectric.com/assets/images/professional-electrician-nova.jpg",
+          "datePublished": "2025-01-05", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Essential tips for selecting a qualified and trustworthy electrical contractor for your home projects."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/smart-home-electrical-trends-2025-nova.html" },
+          "headline": "Smart Home Electrical Trends for 2025 in Northern Virginia",
+          "image": "https://www.ajlongelectric.com/assets/images/smart-home-trends-2025.jpg",
+          "datePublished": "2024-12-30", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Discover the latest smart home technology trends and electrical innovations for the new year."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/quality-electrician-experience-matters-nova.html" },
+          "headline": "Why Quality and Experience Matter When Choosing an Electrician",
+          "image": "https://www.ajlongelectric.com/assets/images/experienced-electrician-nova.jpg",
+          "datePublished": "2024-12-25", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Learn why professional experience and quality workmanship are crucial for your electrical projects."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/winter-electrical-safety-tips-nova.html" },
+          "headline": "Winter Electrical Safety Tips for Northern Virginia Homes",
+          "image": "https://www.ajlongelectric.com/assets/images/winter-electrical-safety-nova.jpg",
+          "datePublished": "2024-12-20", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Essential winter electrical safety precautions to keep your family safe during the cold months."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/prepare-home-summer-electrical-tips-nova.html" },
+          "headline": "How to Prepare Your Home for Summer: Electrical Tips for Northern Virginia",
+          "image": "https://www.ajlongelectric.com/assets/images/summer-electrical-preparation-nova.jpg",
+          "datePublished": "2024-12-15", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Get your home ready for summer with essential electrical maintenance and energy-saving tips."
+        },
+        {
+          "@type": "BlogPosting",
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ajlongelectric.com/blog/ceiling-fan-installation-mistakes-nova.html" },
+          "headline": "Common Ceiling Fan Installation Mistakes to Avoid",
+          "image": "https://www.ajlongelectric.com/assets/images/ceiling-fan-installation-nova.jpg",
+          "datePublished": "2024-12-10", "author": { "@type": "Organization", "name": "AJ Long Electric" },
+          "description": "Learn about common ceiling fan installation mistakes and how professional installation ensures safety."
+        }
+      ]
+    }
+    </script>
+<script src="/js/header-loader.js?v=1746953030"></script>
+<script defer="" src="/js/housecall-pro-integration.js?v=1746955357"></script>
+<link href="/service-areas.html" rel="canonical"/>
+<!-- Breadcrumb Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ajlongelectric.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Public"
+    }
+  ]
+}
+</script>
+
+    <!-- ========================================
+         CONSOLIDATED CSS STRUCTURE v3.0
+         Load in this specific order for proper cascade
+         ======================================== -->
+
+    <!-- 1. CORE: Base styles, typography, header, navigation, buttons -->
+    <link rel="stylesheet" href="/assets/css/core.css">
+
+    <!-- 2. MOBILE: All mobile optimizations consolidated -->
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+
+    <!-- 3. FOOTER: Desktop 4-col & mobile 1-col layout -->
+    <link rel="stylesheet" href="/assets/css/footer.css">
+
+    <!-- 4. ACCESSIBILITY: WCAG 2.1 Level AA compliance -->
+    <link rel="stylesheet" href="/assets/css/accessibility.css">
+
+</head>
+<body class="font-sans antialiased text-gray-800">
+<!-- Include the standard header -->
+<div w3-include-html="/include/standard-header.html"></div><!-- Skip to main content for accessibility -->
+<a class="skip-to-main sr-only sr-only-focusable" href="/#main-content">Skip to main content</a>
+<div data-include="/include/standard-header.html"></div>
+<section class="py-12 pattern-bg text-white">
+<div class="container mx-auto px-4 text-center">
+<h1 class="text-4xl font-bold mb-4 animate-fadeInUp">AJ Long Electric: Tips &amp; Insights Blog</h1>
+<p class="text-lg max-w-3xl mx-auto animate-fadeInUp" style="animation-delay: 0.2s;">
+                Expert advice, maintenance tips, and industry insights from <a class="text-aj-orange hover:underline font-semibold" href="/service-areas.html">Northern Virginia's trusted electricians</a>. We cover everything from <a class="text-aj-orange hover:underline font-semibold" href="/services/ev-charger-installation/index.html">EV charger installations</a> to <a class="text-aj-orange hover:underline font-semibold" href="/services/panel-replacements/index.html">panel upgrades</a> and <a class="text-aj-orange hover:underline font-semibold" href="/safety.html">electrical safety</a>.
+            </p>
+</div>
+</section>
+<main class="py-16">
+
+<div class="container mx-auto px-4">
+<!-- Featured Article -->
+<div class="mb-16 bg-white rounded-lg shadow-lg overflow-hidden">
+<div class="md:flex">
+<div class="md:w-1/2">
+<a href="/blog/ev-charger-installation-guide-nova.html">
+<img alt="Professional EV charger installation - Northern Virginia electric vehicle charging station setup" class="w-full h-full object-cover" loading="lazy" src="/assets/images/TBD/ev-charger-installation-resources.png"/>
+</a>
+</div>
+<div class="md:w-1/2 p-8">
+<div class="flex items-center mb-4">
+<span class="category-badge bg-blue-100 text-blue-800 mr-3">Featured</span>
+<span class="date-badge">May 3, 2023</span>
+</div>
+<h2 class="text-2xl font-bold mb-4"><a class="text-aj-dark hover:text-aj-orange" href="/blog/ev-charger-installation-guide-nova.html">The Complete Guide to EV Charger Installation for Homeowners</a></h2>
+<p class="text-gray-600 mb-6">
+                            As electric vehicles become increasingly popular in <a class="text-aj-orange hover:underline" href="/locations/virginia/cities/fairfax.html">Fairfax</a>, <a class="text-aj-orange hover:underline" href="/locations/virginia/cities/arlington.html">Arlington</a>, and <a class="text-aj-orange hover:underline" href="/locations/virginia/cities/alexandria.html">Alexandria</a>, many homeowners are considering installing EV chargers in their homes. This comprehensive guide covers everything from the different types of EV chargers to installation considerations and costs in Northern Virginia.
+                        </p>
+<a class="inline-block bg-aj-orange text-white font-semibold px-6 py-3 rounded shadow hover:bg-gray-800 transition" href="/blog/ev-charger-installation-guide-nova.html">Read EV Installation Guide</a>
+</div>
+</div>
+</div>
+<!-- Blog Filters & Search -->
+<div class="blog-filters">
+    <!-- Search and Category Filter - Horizontal Layout -->
+    <div class="flex flex-col md:flex-row gap-4 mb-6">
+        <div class="relative flex-1">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="blog-search" class="blog-search-input" placeholder="Search by title, description, or category...">
+        </div>
+        <select id="category-select" class="blog-sort-select md:w-64">
+            <!-- Dynamic options will be populated by JavaScript -->
+        </select>
+    </div>
+
+    <!-- Results Count and Sort -->
+    <div class="flex flex-wrap justify-between items-center gap-4">
+        <p id="results-count" class="text-gray-600 font-semibold"></p>
+        <div class="flex items-center gap-2">
+            <label for="blog-sort" class="font-semibold text-gray-700">Sort by:</label>
+            <select id="blog-sort" class="blog-sort-select">
+                <option value="date-desc">Newest First</option>
+                <option value="date-asc">Oldest First</option>
+                <option value="title-asc">Title (A-Z)</option>
+                <option value="title-desc">Title (Z-A)</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<!-- Dynamic Blog Posts Container -->
+<div id="blog-posts-container" class="grid md:grid-cols-3 gap-8"></div>
+
+<!-- No Results Message (shown when no posts match filters) -->
+<div id="no-results" class="no-results hidden">
+    <i class="fas fa-search text-5xl mb-4 text-gray-300"></i>
+    <h3 class="text-2xl font-bold mb-2">No Articles Found</h3>
+    <p class="text-lg mb-4">Try adjusting your search or filter criteria.</p>
+    <button onclick="document.getElementById('blog-search').value = ''; currentCategory = 'All'; initializeBlogPage();" class="bg-aj-orange text-white font-semibold px-6 py-3 rounded shadow hover:bg-gray-800 transition">
+        Clear Filters
+    </button>
+</div>
+<!-- Email Signup -->
+<div class="bg-gray-100 rounded-lg p-8 text-center">
+<h3 class="text-2xl font-bold mb-4">Stay Up-to-Date with Electrical Tips</h3>
+<p class="text-gray-600 mb-6 max-w-2xl mx-auto">Subscribe to our newsletter to receive the latest electrical tips, safety advice, and exclusive offers from AJ Long Electric. Delivered to your inbox, not your <a class="text-aj-orange hover:underline" href="/services/panel-replacements/index.html">electrical panel</a>!</p>
+<!-- Contact Section -->
+<div class="text-center p-4">
+<p class="mb-4">Contact us for professional electrical services.</p>
+<a class="btn btn-primary me-3" href="/pages/contact.html">Contact Us</a>
+<a class="btn btn-outline-primary" href="tel:7039970026">Call (703) 997-0026</a>
+</div> </div>
+</div>
+</main>
+<div data-include="/include/standard-footer.html"></div>
+<script defer="" src="/js/include-html.js?v=1746945989"></script>
+<script defer="" src="/js/blog-manager.js"></script>
+<script defer="" src="/js/navigation.js"></script>
+<script async="" src="https://online-booking.housecallpro.com/script.js?token=4bcbc2f7231b4633abc97173fe9db382&amp;orgName=AJ-Long-Electric"></script>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            includeHTML();
+        });
+    </script>
+<!-- Housecall Pro Booking Button (Fixed Position) -->
+<div class="fixed bottom-5 right-5 z-50">
+<button class="hcp-button bg-gray-700 text-white font-bold px-6 py-3 rounded-lg shadow-xl hover:bg-gray-800 transition" data-orgname="AJ-Long-Electric" data-token="4bcbc2f7231b4633abc97173fe9db382" onclick="HCPWidget.openModal()">
+<i class="fas fa-calendar-alt mr-2 text-aj-orange"></i> <span class="text-aj-orange">Book Online</span>
+</button>
+</div>
+<!-- Lazy Loading Script -->
+<script>
+        // Lazy load background images
+        document.addEventListener('DOMContentLoaded', function() {
+            const lazyBackgrounds = document.querySelectorAll('[data-bg]');
+            
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            const element = entry.target;
+                            element.style.backgroundImage = 'url(' + element.dataset.bg + ')';
+                            element.classList.add('bg-loaded');
+                            imageObserver.unobserve(element);
+                        }
+                    });
+                });
+                
+                lazyBackgrounds.forEach(function(element) {
+                    imageObserver.observe(element);
+                });
+            } else {
+                // Fallback for browsers without IntersectionObserver
+                lazyBackgrounds.forEach(function(element) {
+                    element.style.backgroundImage = 'url(' + element.dataset.bg + ')';
+                });
+            }
+        });
+    </script>
+<!-- Mobile Enhancements -->
+<script defer="" src="/js/mobile-enhancements.js"></script>
+<script defer="" src="/js/accessibility-enhancements.js"></script>
+<script defer="" src="/js/fix-tap-targets.js"></script>
+</body>
+</html>
