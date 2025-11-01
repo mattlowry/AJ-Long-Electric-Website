@@ -122,49 +122,22 @@
         .mobile-menu.active { right: 0; }
         .menu-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 199; display: none; }
 
-        /* Team member */
-        .team-member {
-            position: relative;
-            overflow: hidden;
-            border-radius: 0.5rem; /* rounded-lg */
-            aspect-ratio: 4 / 5; /* Maintain aspect ratio */
+        /* Smooth animations for team section */
+        @media (prefers-reduced-motion: no-preference) {
+            .team-card-enter {
+                animation: slideInUp 0.6s ease-out;
+            }
         }
-        .team-member img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center 20%; /* Position to better show faces and logos */
-            max-height: 380px; /* Control maximum height */
-        }
-        .team-member-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.7) 60%, rgba(0,0,0,0));
-            padding: 2.5rem 1rem 1.25rem; /* More top padding for gradient effect */
-            transform: translateY(calc(100% - 4.5rem)); /* Only show name and title initially */
-            transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition */
-            height: auto; /* Let it size naturally */
-            min-height: 9rem; /* Ensure minimum height */
-        }
-        .team-member:hover .team-member-info {
-            transform: translateY(0);
-        }
-        .team-member-info h3 {
-            margin-bottom: 0.25rem;
-            font-size: 1.25rem;
-            color: white;
-        }
-        .team-member-info p.role {
-            margin-bottom: 0.5rem;
-            color: var(--aj-orange);
-            font-weight: 600;
-        }
-        .team-member-info p.description {
-            line-height: 1.4;
-            font-size: 0.875rem;
-            color: #e2e2e2;
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Animated counter */
@@ -339,10 +312,27 @@
         <div class="container mx-auto px-4">
             <div class="md:flex items-center">
                  <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Our <span class="text-aj-orange">Story</span></h2>
-                    <p class="text-lg text-gray-600 mb-4">AJ Long Electric began in 1996 as a true family business, founded by John Long with a commitment to honest work and treating customers like neighbors. After years of seeing homeowners frustrated with unreliable contractors and unclear pricing, John decided to build a company based on transparency, quality, and exceptional service.</p>
-                     <p class="text-lg text-gray-600 mb-4">Joined by his son, Matt Long, the company has grown while maintaining those core family values. We are a father-and-son team at heart, bringing generations of experience and a personal touch to every job. We understand the importance of trust when inviting someone into your home, which is why we focus on clear communication, meticulous workmanship, and leaving your space cleaner than we found it.</p>
-                     <p class="text-lg text-gray-600">Today, AJ Long Electric is proud to be one of the most trusted and highly-rated residential electricians in the DMV area, with over 1,200 5-star reviews reflecting our dedication to customer satisfaction.</p>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Our <span class="text-aj-orange">Story</span></h2>
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-aj-orange mb-3">Founded on Family, Built on Integrity</h3>
+                        <p class="text-base text-gray-600 mb-4 leading-relaxed">
+                            AJ Long Electric wasn't started with dreams of building an empire—it was born out of necessity and a father's unwavering commitment to his family. In 1996, John Long, a skilled union electrician, faced an impossible choice. His daughter required multiple brain surgeries, and the frequent time off needed to care for her kept resulting in layoffs from job sites. John needed to provide for his family financially while being physically present when they needed him most.
+                        </p>
+                        <p class="text-base text-gray-600 mb-4 leading-relaxed">
+                            So he took a chance. He started AJ Long Electric with a simple promise: to treat every customer like family and deliver honest, quality work at fair prices. This company has never been profit-first—it's family-first, and that foundation shapes everything we do.
+                        </p>
+                    </div>
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold text-aj-orange mb-3">Continuing the Legacy</h3>
+                        <p class="text-base text-gray-600 mb-4 leading-relaxed">
+                            For years, the business thrived under John's leadership. His son, Matt, initially pursued a different path, spending nearly a decade in education. But in 2019, Matt returned to ensure that the legacy his father built—one of integrity, quality, and putting people first—would continue for generations to come.
+                        </p>
+                        <p class="text-base text-gray-600 leading-relaxed">
+                            Together, this father-and-son team brings over 40 years of combined electrical expertise to your home. We're not just contractors—we're your neighbors, serving the same communities where we live and raise our own families.
+                        </p>
+                    </div>
                  </div>
                  <div class="md:w-1/2">
                      <div class="flex justify-center items-center">
@@ -351,6 +341,82 @@
                          </div>
                      </div>
                  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Believe -->
+    <section class="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What We <span class="text-aj-orange">Stand For</span></h2>
+                <p class="text-lg text-gray-600">Our customers aren't just transactions—they're friends, family, and neighbors.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-md border-l-4 border-aj-orange">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <div class="w-12 h-12 rounded-full bg-aj-orange bg-opacity-10 flex items-center justify-center">
+                                <i class="fas fa-heart text-aj-orange text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Family & Community First</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                We live and work in the same neighborhoods we serve. Your home matters to us because it could just as easily be our own. That personal connection drives us to deliver work we'd be proud to show our own families.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md border-l-4 border-aj-orange">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <div class="w-12 h-12 rounded-full bg-aj-orange bg-opacity-10 flex items-center justify-center">
+                                <i class="fas fa-balance-scale text-aj-orange text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Honest Service, Fair Prices</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                We fix what needs to be fixed—nothing more. We don't upsell unnecessary work or invent problems that don't exist. You'll get straightforward answers, transparent pricing, and solutions that actually solve your electrical issues.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md border-l-4 border-aj-orange">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <div class="w-12 h-12 rounded-full bg-aj-orange bg-opacity-10 flex items-center justify-center">
+                                <i class="fas fa-tools text-aj-orange text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Quality That Lasts</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                We're selective about who joins our team because quality matters. Every electrician we hire shares our commitment to craftsmanship. We do the job right the first time so it stays safe and problem-free for years to come.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md border-l-4 border-aj-orange">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mr-4">
+                            <div class="w-12 h-12 rounded-full bg-aj-orange bg-opacity-10 flex items-center justify-center">
+                                <i class="fas fa-home text-aj-orange text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">The Standard We Set</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Every installation, every repair, every service call is held to one simple standard: Would we want this in our own home? That question guides our work and ensures you receive the same level of care we'd expect for our own families.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -415,35 +481,75 @@
         </div>
     </section>
 
-    <!-- Our Team -->
-    <section class="py-16">
+    <!-- Meet the Team -->
+    <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
              <div class="text-center mb-12">
-                 <h2 class="text-3xl font-bold text-gray-800 mb-2">Meet Our <span class="text-aj-orange">Team</span></h2>
-                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">Our skilled and courteous electricians bring years of experience to every project.</p>
+                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Meet the <span class="text-aj-orange">Father & Son Team</span></h2>
+                 <p class="text-lg text-gray-600 max-w-3xl mx-auto">Two generations of electrical expertise, one shared commitment to exceptional service and treating every customer like family.</p>
              </div>
 
-             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
-                <!-- Team Member 1 - John Long (Father) -->
-                <div class="team-member shadow-lg hover-grow">
-                    <img src="/assets/images/about/about-dad.jpg" alt="John Long - Founder and Master Electrician at AJ Long Electric family business" class="w-full object-cover" style="object-position: center 30%;" loading="lazy">
-                    <div class="team-member-info">
-                        <h3>John Long</h3>
-                        <p class="role">Founder & Master Electrician</p>
-                        <p class="description">Founder of AJ Long Electric and father to Matt, John brings over 40 years of electrical expertise to every project. His commitment to honest work, fair pricing, and treating customers like family has been the cornerstone of our business since 1996.</p>
+             <div class="max-w-6xl mx-auto space-y-12">
+                <!-- John Long - Father -->
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                    <div class="md:flex">
+                        <div class="md:w-5/12 lg:w-2/5">
+                            <div class="h-full relative">
+                                <img src="/assets/images/about/about-dad.jpg" alt="John Long - Founder and Master Electrician at AJ Long Electric" class="w-full h-full object-cover min-h-[400px] md:min-h-[450px]" style="object-position: center 30%;" loading="lazy">
+                                <div class="absolute top-4 left-4 bg-aj-orange text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+                                    <i class="fas fa-star mr-1"></i> Founder
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-7/12 lg:w-3/5 p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">John Long</h3>
+                            <p class="text-xl text-aj-orange font-semibold mb-6">Founder & Master Electrician</p>
+                            <div class="space-y-4 text-gray-600 leading-relaxed">
+                                <p>
+                                    <strong class="text-gray-800">Over 40 years of electrical expertise,</strong> John founded AJ Long Electric in 1996 when family circumstances required a leap of faith. As a union electrician facing constant layoffs due to time needed for his daughter's medical care, John chose to build something of his own—a business where family always comes first.
+                                </p>
+                                <p>
+                                    His philosophy is simple but powerful: treat every customer like a neighbor, never sell work that isn't needed, and do every job as if it were for his own home. This honest, no-nonsense approach has earned the trust of thousands of families across Northern Virginia, DC, and Maryland.
+                                </p>
+                                <p class="text-sm italic text-gray-500 border-l-4 border-aj-orange pl-4 mt-6">
+                                    "I started this business to take care of my family. That same commitment—to be there when it matters and deliver work you can count on—is what we bring to every customer."
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Team Member 2 - Matt Long (Son) -->
-                <div class="team-member shadow-lg hover-grow">
-                    <img src="/assets/images/about/About-Matt.jpg" alt="Matt Long - Operations Manager at AJ Long Electric family business" class="w-full object-cover" style="object-position: center 25%;" loading="lazy">
-                    <div class="team-member-info">
-                        <h3>Matt Long</h3>
-                        <p class="role">Operations & Business Manager</p>
-                        <p class="description">Following in his father's footsteps, Matt joined the family business to continue AJ Long Electric's legacy of exceptional service. He brings modern technology and innovative customer service solutions while upholding the quality standards John established.</p>
+                <!-- Matt Long - Son -->
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                    <div class="md:flex md:flex-row-reverse">
+                        <div class="md:w-5/12 lg:w-2/5">
+                            <div class="h-full relative">
+                                <img src="/assets/images/about/About-Matt.jpg" alt="Matt Long - Operations & Business Manager at AJ Long Electric" class="w-full h-full object-cover min-h-[400px] md:min-h-[450px]" style="object-position: center 25%;" loading="lazy">
+                                <div class="absolute top-4 right-4 bg-aj-orange text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+                                    <i class="fas fa-handshake mr-1"></i> Second Generation
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-7/12 lg:w-3/5 p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">Matt Long</h3>
+                            <p class="text-xl text-aj-orange font-semibold mb-6">Operations & Business Manager</p>
+                            <div class="space-y-4 text-gray-600 leading-relaxed">
+                                <p>
+                                    <strong class="text-gray-800">After nearly a decade in education,</strong> Matt returned to the family business in 2019 with a mission: to ensure the values and quality his father built would continue to serve the community for generations to come.
+                                </p>
+                                <p>
+                                    Matt brings fresh perspective and modern operational excellence while staying true to the core principle that made AJ Long Electric trusted by so many—putting people before profits. He oversees daily operations, customer experience, and team development, ensuring every job reflects the family-first values John established nearly three decades ago.
+                                </p>
+                                <p>
+                                    Together, John and Matt represent <strong>over 40 years of combined electrical experience,</strong> backed by the kind of personal accountability that only comes from a family name being on every truck.
+                                </p>
+                                <p class="text-sm italic text-gray-500 border-l-4 border-aj-orange pl-4 mt-6">
+                                    "I came back because what my father built matters. It's not just a business—it's a promise to our community that they'll always get honest service from people who genuinely care."
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Add more team members as needed -->
              </div>
          </div>
     </section>
